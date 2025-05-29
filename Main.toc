@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Methodology}{7}{0}{2}
-\beamer@sectionintoc {3}{Key Results}{12}{0}{3}
-\beamer@sectionintoc {4}{Analysis \& Discussion}{15}{0}{4}
+\beamer@sectionintoc {2}{Vanisihing Perturbations}{5}{0}{2}
+\beamer@sectionintoc {3}{Non-Vanisihing Perturbations}{9}{0}{3}
+\beamer@sectionintoc {4}{Summary and Discussion}{12}{0}{4}
