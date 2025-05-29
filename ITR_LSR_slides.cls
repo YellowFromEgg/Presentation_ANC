@@ -74,7 +74,7 @@
 \else
     \RequirePackage[utf8]{inputenc}
 \fi
-\RequirePackage[url=false,citestyle=authoryear,block=ragged,backend=bibtex8,maxcitenames=1,maxbibnames=1]{biblatex}
+\RequirePackage[url=false,citestyle=authoryear,block=ragged,backend=bibtex8,maxcitenames=1]{biblatex}
 \def\blx@maxline{77}
 %% if number of authors exceeds maxcitenames, the rest ist shortend with just a "+"
 \DefineBibliographyStrings{english}{andothers={\texttt{+}}}
@@ -137,7 +137,7 @@
 		\newcommand{\chairname}{Institute of Automatic Control Engineering}
 		\newcommand{\tumname}{Technical University of Munich}
 	\fi
-	\newcommand{\chairweb}{}
+	\newcommand{\chairweb}{www.ce.cit.tum.de/lsr}
 \else
 	\if@ITR
 		\if@langGer
@@ -541,15 +541,15 @@
   	\if@longpres
   		\begin{tikzpicture}[remember picture,overlay]
       		\draw [] ($(current page.south west) + (.3, 1.)$) -- ($(current page.south east) + (-.3, 1.)$);
-      		% \pic (tumlogo) [scale=.7, tum_blue] at ($(current page.south west) + (0.96, 0.5)$) {tumlogo};
+      		\pic (tumlogo) [scale=.7, tum_blue] at ($(current page.south west) + (0.96, 0.5)$) {tumlogo};
       		\if@LSR
-      			% \pic (lsrlogo) [scale=.9] at ($(current page.south east) +
-            	%	(-0.42, 0.5) +
-            	%	(-0.26, 0)
-            	%	$) {lsrlogo};
+      			\pic (lsrlogo) [scale=.9] at ($(current page.south east) +
+            		(-0.42, 0.5) +
+            		(-0.26, 0)
+            		$) {lsrlogo};
       		\fi
       		\if@ITR
-        		% \pic (itrlogo) [scale=.4] at ($(current page.south east) + (-1, 0.5) $) {itrlogo};
+        		\pic (itrlogo) [scale=.4] at ($(current page.south east) + (-1, 0.5) $) {itrlogo};
       		\fi
     	\end{tikzpicture}
     	\if@ITR
@@ -562,14 +562,14 @@
   	\else % longpres
   		\begin{tikzpicture}[remember picture,overlay]
       		\draw [] ($(current page.south west) + (.3, .6)$) -- ($(current page.south east) + (-.3, .6)$);
-      		% \pic (tumlogo) [scale=.5, tum_blue] at ($(current page.south west) + (0.78, 0.3)$) {tumlogo};
+      		\pic (tumlogo) [scale=.5, tum_blue] at ($(current page.south west) + (0.78, 0.3)$) {tumlogo};
       		\if@LSR
-      			% \pic (lsrlogo) [scale=.53] at ($(current page.south east) +
-            	%	(-0.53, 0.3)$) {lsrlogo};
+      			\pic (lsrlogo) [scale=.53] at ($(current page.south east) +
+            		(-0.53, 0.3)$) {lsrlogo};
       		\fi
       		\if@ITR
-        		% \pic (itrlogo) [scale=.26] at ($(current page.south east) +
-            	%	(-0.75, 0.29) $) {itrlogo};
+        		\pic (itrlogo) [scale=.26] at ($(current page.south east) +
+            		(-0.75, 0.29) $) {itrlogo};
       		\fi
     	\end{tikzpicture}
     	\hspace{1.6cm} \raisebox{4mm}{\insertnavigation{\lengtha}{}{}}
@@ -594,17 +594,17 @@
             \fi
             \coordinate (footerbartopleft) at ($(current page.south west) + (0, 1)$);
             % filled bar at footer
-            %\fill[sharp corners,white] %
+            \fill[sharp corners,tum_blue] %
             % top part
-            %(footerbartopleft) [rounded corners=0.2cm]-| (chairlogocutoutbottomleft) -| (chairlogocutoutbottomright |- footerbartopleft) [sharp corners]-- ($(current page.south east) + (0, 1)$) --
+            (footerbartopleft) [rounded corners=0.2cm]-| (chairlogocutoutbottomleft) -| (chairlogocutoutbottomright |- footerbartopleft) [sharp corners]-- ($(current page.south east) + (0, 1)$) --
             %bottom part
-            %    (current page.south east) -- (current page.south west) --cycle;
-      		% \pic (tumlogo) [scale=.7, white] at ($(current page.south west) - (-0.95, -0.5)$) {tumlogo};
+                (current page.south east) -- (current page.south west) --cycle;
+      		\pic (tumlogo) [scale=.7, white] at ($(current page.south west) - (-0.95, -0.5)$) {tumlogo};
       		\if@LSR
-            	% \pic (lsrlogo) [scale=.9] at  (chairlogoposition){lsrlogo};
+            	\pic (lsrlogo) [scale=.9] at  (chairlogoposition){lsrlogo};
             \fi
             \if@ITR
-            	% \pic (itrlogo) [scale=.4] at  (chairlogoposition){itrlogo};
+            	\pic (itrlogo) [scale=.4] at  (chairlogoposition){itrlogo};
             \fi
             \node [anchor=south, white] (url) at ($(current page.south) + (0.0, 0.25)$) {\bf  \large \href{http://\chairweb}{\chairweb}};
     	\end{tikzpicture}
@@ -622,17 +622,17 @@
             \fi
             \coordinate (footerbartopleft) at ($(current page.south west) + (0, .6)$);
             % filled bar at footer
-            %\fill[sharp corners,tum_blue] %
+            \fill[sharp corners,tum_blue] %
             % top part
-            %(footerbartopleft) [rounded corners=0.2cm]-| (chairlogocutoutbottomleft) -| (chairlogocutoutbottomright |- footerbartopleft) [sharp corners]-- ($(current page.south east) + (0, .6)$) --
+            (footerbartopleft) [rounded corners=0.2cm]-| (chairlogocutoutbottomleft) -| (chairlogocutoutbottomright |- footerbartopleft) [sharp corners]-- ($(current page.south east) + (0, .6)$) --
             %bottom part
-            %    (current page.south east) -- (current page.south west) --cycle;
-      		% \pic (tumlogo) [scale=.5, white] at ($(current page.south west) +	 (0.78, 0.3)$) {tumlogo};
+                (current page.south east) -- (current page.south west) --cycle;
+      		\pic (tumlogo) [scale=.5, white] at ($(current page.south west) +	 (0.78, 0.3)$) {tumlogo};
       		\if@LSR
-            	% \pic (lsrlogo) [scale=.53] at  (chairlogoposition){lsrlogo};
+            	\pic (lsrlogo) [scale=.53] at  (chairlogoposition){lsrlogo};
             \fi
             \if@ITR
-            	% \pic (itrlogo) [scale=.26] at  (chairlogoposition){itrlogo};
+            	\pic (itrlogo) [scale=.26] at  (chairlogoposition){itrlogo};
             \fi
             \node [anchor=south, white] (url) at ($(current page.south) + (0.0, 0.12)$) {\bf \normalsize \href{http://\chairweb}{\chairweb}};
     	\end{tikzpicture}
@@ -683,7 +683,7 @@
                 	{\textsl{Lehrstuhl für Informationstechnische Regelung}} \\
                 	{\textsl{Technische Universität München}} \\
                 \else
-                	{\textsl{Associate Professorship of Machine Learning}} \\
+                	{\textsl{Chair of Information-oriented Control}} \\
                 	{\textsl{Technical University of Munich}} \\
                 \fi
                 \mbox {} \\
@@ -720,14 +720,14 @@
                 	Betreuer: \@varsupervisor}%
 			\else
             	{\color{tum_mgray}
-                	 11 July 2025 \@varsupervisor}%
+                	 July 2022 \@varsupervisor}%
             \fi
         \fi     
         \vskip 0mm plus 4filll
         \if@langGer
         	{Lehrstuhl für Steuerungs- und Regelungstechnik}\\
 		\else
-        	{Associate Professorship of Machine Learning} \\
+        	{Chair of Automatic Control Engineering} \\
         \fi        
         \ifxetex
             \addfontfeatures{Color=tum_mgray}

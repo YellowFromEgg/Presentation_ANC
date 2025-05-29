@@ -1,19 +1,33 @@
-\documentclass[student, noshadow, lsr, english, aspectratio=169]{ITR_LSR_slides}
-% student options:
-% lsr 				-> lsr, template (remove for itr)
-% english 			-> enables english language format
-% aspectratio=43	-> 4:3 layout
+\documentclass[student, noshadow, lsr, english, aspectratio=169, t]{ITR_LSR_slides}
+
+\setbeamertemplate{frametitle}{%
+  \vspace{0.3cm}% Space between top edge and title
+  \if@center
+    \begin{centering}
+      \textbf{\vphantom{Sp}\insertframetitle\vphantom{Sp}}
+      \par
+    \end{centering}
+  \else
+    \textbf{\vphantom{Sp}\insertframetitle\vphantom{Sp}}
+    \par
+  \fi
+  \vspace{0.3cm}% Space between title and content
+}
+
+% Add top margin to frames without titles
+\addtobeamertemplate{frame begin}{%
+  \ifx\insertframetitle\@empty
+    \vspace{0.8cm}% Space at top of frames without titles
+  \fi
+}{}
 
 \addbibresource{ref.bib}
 \graphicspath{{pics/}{logos/}}
 
-\title{Reasoning Models Can Be Effective Without Thinking - Ma et. al.}
+\title{Analysis and Control of Time-Varying and Perturbed Systems}
 \presenter{Keno Bürger}
+\typeofpres{Advanced Nonlinear Control}
 
-\typeofpres{Scientific Seminar Machine Learning}
-
-%\usepackage[bigfiles]{media9} %option bigfiles not needed for xelatex, runs without problems on ubuntu14
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage[T1]{fontenc}
@@ -26,7 +40,6 @@
 \usepackage{makecell}
 
 \begin{document}
-
 
 \begin{frame}
     \titlepage

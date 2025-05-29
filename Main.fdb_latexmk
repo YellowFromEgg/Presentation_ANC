@@ -1,22 +1,22 @@
 # Fdb version 4
-["bibtex Main"] 1748524111.89376 "Main.aux" "Main.bbl" "Main" 1748533566.11706 0
-  "./Main-blx.bib" 1748533560 343 0aef6510a096c82a378e81af91537085 ""
+["bibtex Main"] 1748537210.86852 "Main.aux" "Main.bbl" "Main" 1748537228.99072 0
+  "./Main-blx.bib" 1748537223 343 0aef6510a096c82a378e81af91537085 ""
   "./ref.bib" 1748519107 4411 4e5e0dad3f552d71600ee0c36a01998b ""
-  "Main.aux" 1748533560 6120 91f3aa6a72d2ab1ec7f34a304365aa6a "pdflatex"
+  "Main.aux" 1748537223 6120 91f3aa6a72d2ab1ec7f34a304365aa6a "pdflatex"
   "c:/texlive/2023/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1698153338 65484 b7949c47a88ed6dca66ebc7a04577312 ""
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1748533550.7524 "c:/Users/kenob/OneDrive/Dokumente/GitHub/Presentation_ANC/Main.tex" "Main.pdf" "Main" 1748533566.12047 0
-  "ITR_LSR_slides.cls" 1748520969 34163 db231655523c824446e228de6f6715c4 ""
-  "Main.aux" 1748533560 6120 91f3aa6a72d2ab1ec7f34a304365aa6a "pdflatex"
-  "Main.bbl" 1748524113 18593 a933f6d4a7e18228660be09a9c612c8e "bibtex Main"
-  "Main.nav" 1748533560 2766 afe75ee6c824a14df298edbe3708bb39 "pdflatex"
-  "Main.out" 1748533560 943 01642d18b0be040398c3432343970978 "pdflatex"
-  "Main.run.xml" 1748533560 2554 9d81794aff8831d079217d6ac7f98649 "pdflatex"
-  "Main.tex" 1748533548 4871 48a07c7953d6ee05a6c8657239657d1f ""
-  "c:/Users/kenob/OneDrive/Dokumente/GitHub/Presentation_ANC/Main.tex" 1748533548 4871 48a07c7953d6ee05a6c8657239657d1f ""
+["pdflatex"] 1748537212.50734 "c:/Users/kenob/OneDrive/Dokumente/GitHub/Presentation_ANC/Main.tex" "Main.pdf" "Main" 1748537228.99371 0
+  "ITR_LSR_slides.cls" 1748537156 34126 6115404ea6fb539291be1f2b8db4ac58 ""
+  "Main.aux" 1748537223 6120 91f3aa6a72d2ab1ec7f34a304365aa6a "pdflatex"
+  "Main.bbl" 1748537212 18593 a933f6d4a7e18228660be09a9c612c8e "bibtex Main"
+  "Main.nav" 1748537223 2766 afe75ee6c824a14df298edbe3708bb39 "pdflatex"
+  "Main.out" 1748537223 943 01642d18b0be040398c3432343970978 "pdflatex"
+  "Main.run.xml" 1748537223 2554 9d81794aff8831d079217d6ac7f98649 "pdflatex"
+  "Main.tex" 1748536613 5062 4addbe7d3fd6c0b853a3dd007a8066ba ""
+  "c:/Users/kenob/OneDrive/Dokumente/GitHub/Presentation_ANC/Main.tex" 1748536613 5062 4addbe7d3fd6c0b853a3dd007a8066ba ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1698155695 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1698155695 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1698155695 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
