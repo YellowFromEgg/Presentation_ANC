@@ -720,7 +720,7 @@
                 	Betreuer: \@varsupervisor}%
 			\else
             	{\color{tum_mgray}
-                	 July 2022 \@varsupervisor}%
+                	16 June 2025 \@varsupervisor}%
             \fi
         \fi     
         \vskip 0mm plus 4filll
