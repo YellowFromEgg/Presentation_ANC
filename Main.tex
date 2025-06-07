@@ -75,15 +75,15 @@
 	% \end{itemize}
 	\textbf{Assumptions:}
 	\begin{itemize}
-		\item Origin $x=0$ is an equilibrium point
-		\item Lyapunov function $V(t,x)$ is continuously differentialbe, positive definite and radially unbounded
+		\item Origin $\underline{x}=0$ is an equilibrium point
+		\item Lyapunov function $V(t,\underline{x})$ is continuously differentialbe, positive definite and radially unbounded
 		\item Derivative of Lyapunov function is negative definite
 	\end{itemize}
 	\vspace{0.5cm}
 	\textbf{Globally uniformly exponentially stable:}
 	\begin{align*}
-		\exists\, c_i, \alpha > 0: & \; c_1\left\|x\right\|^\alpha \leq V(t,x) \leq c_2\left\|x\right\|^\alpha  \\
-		& \dot{V}(t,x) \leq -c_3\|x\|^\alpha
+		\exists\, c_i, \alpha > 0: & \; c_1\left\|\underline{x}\right\|^\alpha \leq V(t,\underline{x}) \leq c_2\left\|\underline{x}\right\|^\alpha  \\
+		& \dot{V}(t,\underline{x}) \leq -c_3\|\underline{x}\|^\alpha
 	\end{align*}
 \end{frame}
 
@@ -104,14 +104,14 @@
         \column{0.47\textwidth}
 		\textbf{Boundedness:}
 		\begin{align*}
-			\|x(t_0)\| \leq \alpha \Rightarrow \|x(t)\| \leq \beta,
+			\|\underline{x}(t_0)\| \leq \alpha \Rightarrow \|\underline{x}(t)\| \leq \beta,
 			\\ c>0, \alpha\in(0,c),\, \beta>0,\,\forall\, t \geq t_0
 		\end{align*}
 
         \column{0.47\textwidth}
 		\textbf{Ultimate Boundedness:}
 		\begin{align*}
-			\|x(t)\| \leq b 
+			\|\underline{x}(t)\| \leq b 
 			\\ \forall\, t \geq t_0+T
 		\end{align*}
     \end{columns}
@@ -123,13 +123,13 @@
 	\frametitle{Perturbation Model for Vanishing Perturbation Models}
 	\begin{itemize}
 		\item Exact Modelling rarley feasible due to modelling errors/external disturbances or parameter drift
-		\item $\dot{x}=f(x)+g(x,t)$
+		\item $\dot{\underline{x}}=f(\underline{x})+g(\underline{x},t)$
 		\begin{itemize}
 			\item f is locally Lipschitz
 			\item g is piecewise continuous in t and locally Lipschitz
 			\item generally unknown but bounded
 		\end{itemize}
-		\item $g(0,t)$ and $g(x,t)=0$ for $t\rightarrow\infty$
+		\item $g(0,t)$ and $g(\underline{x},t)=0$ for $t\rightarrow\infty$
 	\end{itemize}
 \end{frame}
 
@@ -142,17 +142,17 @@
 	% \end{itemize}
 	\textbf{Assumptions:}
 	\begin{itemize}
-		\item Origin $x=0$ is an exponentially stable equilibrium point
+		\item Origin $\underline{x}=0$ is an exponentially stable equilibrium point
 		\item Perturbation vanishes
-		\item Lyapunov function $V(t,x)$ is continuously differentialbe, positive definite and radially unbounded
+		\item Lyapunov function $V(t,\underline{x})$ is continuously differentialbe, positive definite and radially unbounded
 	\end{itemize}
 	\vspace{0.5cm}
 	\textbf{Globally Uniformly Exponentially Stable Equilibrium:}
 	\begin{align*}
-		\frac{\partial V}{\partial t}+\frac{\partial V}{\partial x}f(x) \leq c_3\|x\|^2 \text{ and }\|\frac{\partial V}{\partial x}\| \leq c_4\|x\|
+		\frac{\partial V}{\partial t}+\frac{\partial V}{\partial \underline{x}}f(\underline{x}) \leq c_3\|\underline{x}\|^2 \text{ and }\|\frac{\partial V}{\partial \underline{x}}\| \leq c_4\|\underline{x}\|
 	\end{align*}
 	\begin{align*}
-		\|g(x,t)\| \leq \gamma\|x\| \text{ with }0\leq\gamma(t)<\frac{c_3}{c_4}
+		\|g(\underline{x},t)\| \leq \gamma\|\underline{x}\| \text{ with }0\leq\gamma(t)<\frac{c_3}{c_4}
 	\end{align*}
 
 \end{frame}
@@ -165,13 +165,13 @@
 	% \end{itemize}
 	\textbf{Assumptions:}
 	\begin{itemize}
-		\item Origin $x=0$ is an exponentially stable equilibrium point
+		\item Origin $\underline{x}=0$ is an exponentially stable equilibrium point
 		\item Perturbation vanishes
 	\end{itemize}
 	\vspace{0.5cm}
 	\textbf{Exponential Stability:}
 	\begin{align*}
-		\|g(x,t)\| \leq \gamma(t)\|x\| \text{ with }\int_{t_0}^{t}\gamma(\tau)d\tau<\epsilon(t-t_o)+\eta
+		\|g(\underline{x},t)\| \leq \gamma(t)\|\underline{x}\| \text{ with }\int_{t_0}^{t}\gamma(\tau)d\tau<\epsilon(t-t_o)+\eta
 	\end{align*}
 	\begin{align*}
 		\text{with } \epsilon < \frac{c_1c_3}{c_2c_4}
@@ -181,25 +181,25 @@
 \begin{frame}
 	\frametitle{Example: Linear Time-Varying System}
 	% \begin{itemize}
-	% 	\item $\dot{x}=[A(T)+B(t)]x$
-	% 	\item Lyapunov function $V(t,x)$ is positive definite and derivative negative definite
-	% 	\item $g(t,x) = B(t)x \Rightarrow \|g(t,x)\| \leq \|B(t)\| \cdot \|x\| = \gamma(t) \|x\|$
+	% 	\item $\dot{\underline{x}}=[A(T)+B(t)]\underline{x}$
+	% 	\item Lyapunov function $V(t,\underline{x})$ is positive definite and derivative negative definite
+	% 	\item $g(t,\underline{x}) = B(t)\underline{x} \Rightarrow \|g(t,\underline{x})\| \leq \|B(t)\| \cdot \|\underline{x}\| = \gamma(t) \|\underline{x}\|$
 	% 	\item $\int_{t_0}^{t}\gamma(\tau)d\tau<\epsilon(t-t_o)+\eta$
 	% 	\item[$\Rightarrow$] Exponetial stability of nominal system is preserved under vanishing perturbations
 	% \end{itemize}
 	\textbf{Perturbed Linear Time-Varying System:}
 	\begin{align*}
-		\dot{x}=[A(t)+B(t)]x
+		\dot{\underline{x}}=[A(t)+B(t)]\underline{x}
 	\end{align*}
 	\textbf{Assumptions:}
 	\begin{itemize}
 		\item $A(t)$ is uniformly bounded
 		\item Origin of nominal system is uniformly exponentially stable
 		\item $B(t) \rightarrow 0$ as $t\rightarrow\infty$
-		\item Lyapunov function $V(t,x)$ is positive definite and derivative negative definite
+		\item Lyapunov function $V(t,\underline{x})$ is positive definite and derivative negative definite
 	\end{itemize}
 	\begin{align*}
-		g(t,x) = B(t)x \Rightarrow \|g(t,x)\| \leq \|B(t)\| \cdot \|x\| = \gamma(t) \|x\|
+		g(t,\underline{x}) = B(t)\underline{x} \Rightarrow \|g(t,\underline{x})\| \leq \|B(t)\| \cdot \|\underline{x}\| = \gamma(t) \|\underline{x}\|
 	\end{align*}
 	$\Rightarrow$ Exponential stability of nominal system is preserved under vanishing perturbations
 	
@@ -216,7 +216,7 @@
 	% 	\item Gurantee that the state will remain within a small neighborhood around the origin
 	% \end{itemize}
 	\begin{itemize}
-        \item $g(t,x)$ does not vanish, persistent input or modeling error
+        \item $g(t,\underline{x})$ does not vanish, persistent input or modeling error
         \item Origin is no longer an equilibrium
         \item Use ultimate boundedness: trajectories enter and remain in a compact set
         \item Stability becomes input-to-state-like (robustness to bounded disturbances)
@@ -231,13 +231,11 @@
 	% \end{itemize}
 	\textbf{Assumptions:}
 	\begin{itemize}
-		\item Origin $x=0$ is an exponentially stable equilibrium point
-		\item Non vanishing perturbation
-		\item Lyapunov function $V(t,x)$ is continuously differentialbe, positive definite and radially unbounded
-		\item Derivative of Lyapunov function is negative definite
-		\item Perturbation is bounded
+		\item $\underline{x}=0$ is exponentially stable for the nominal system
+        \item Non-vanishing, bounded perturbation $g(\underline{x},t)$
+        \item Lyapunov function $V(t,\underline{x})$ is positive definite, radially unbounded
 		\begin{align*}
-			\|g(x,t)\| \leq \delta<\frac{c_3}{c_4}\sqrt{\frac{c_1}{c_2}}\theta r, \text{ with } \in(0,1), r>0
+			\|g(\underline{x},t)\| \leq \delta<\frac{c_3}{c_4}\sqrt{\frac{c_1}{c_2}}\theta r, \text{ with } \in(0,1), r>0
 		\end{align*}
 	\end{itemize}
 \end{frame}
@@ -245,17 +243,18 @@
 \begin{frame}
 	\frametitle{Lyapunov Based Conditions for Boundednes}
 	\textbf{Exponetial Stability:} \\
-	For all initial conditions $\|x(t_0)|\leq \sqrt{c_1/c_2}r$
+	For all initial conditions $\|\underline{x}(t_0)|\leq \sqrt{c_1/c_2}r$
 	\begin{align*}
-		\|x(t)\| \leq ke^{-\gamma(t-t_0)}\|x(t_0)\|, t_0 \leq t \leq t_0+T
+		\|\underline{x}(t)\| \leq ke^{-\gamma(t-t_0)}\|\underline{x}(t_0)\|, t_0 \leq t \leq t_0+T
 	\end{align*}
 	\begin{align*}
-		\|x(t)\| \leq b \forall\, t \geq t_0+T
+		\|\underline{x}(t)\| \leq b \forall\, t \geq t_0+T
 	\end{align*}
 	\begin{align*}
 		\text{where } k=\sqrt{\frac{c_2}{c_1}},\,\gamma=\frac{(1-\theta)c_3}{2c_2},\, b=\frac{c_4}{c_3}k\frac{\delta}{\theta}
 	\end{align*}
 \end{frame}
+
 
 \begin{frame}
 	\frametitle{Example: Non-Vanishing Perturbation in a Nonlinear System}
@@ -269,44 +268,71 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary and Discussion}
 
+% \begin{frame}
+% 	\frametitle{Conceptual Links Between Sections}
+% 	\begin{itemize}
+%         \item \textbf{Lyapunov Functions:} Central in both cases, quantify energy and decay
+%         \item \textbf{Main Difference:} Convergence to origin vs. convergence to a bounded set
+%         \item \textbf{Comparison Lemma:} Powerful for estimating solution bounds in both cases
+%         \item \textbf{Ultimate Boundedness:} Reflects robustness, common in practical control
+%         \item \textbf{Design Implication:} Small perturbations can be tolerated if decay is fast; persistent ones require constraint-aware design
+%     \end{itemize}
+
+%     \vspace{0.5em}
+%     \textbf{Takeaway:} Both frameworks enhance system analysis in the presence of uncertainty. Knowing the type of perturbation guides appropriate control strategies.
+% \end{frame}
+
+% \begin{frame}
+%     \frametitle{Benefits and Drawbacks of Lyapunov-Based Analysis}
+
+%     \textbf{Benefits}
+%     \begin{itemize}
+%         \item \text{General applicability:} %Works for nonlinear, time-varying, and perturbed systems
+%         \item \text{Rigorous and systematic:}% Provides sufficient conditions for stability and boundedness
+%         \item \text{Insightful design tool:} %Helps in controller synthesis and robustness analysis
+%         \item \text{Comparison lemma:}% Enables practical bounding of trajectories without solving the system
+%         \item \text{Handles uncertainty:}% Applicable to both modeling errors (vanishing) and disturbances (non-vanishing)
+%     \end{itemize}
+
+%     \textbf{Drawbacks}
+%     \begin{itemize}
+%         \item \text{Constructing Lyapunov functions is hard:}% No general method for nonlinear systems
+%         \item \text{Results are conservative:}% Conditions are sufficient but not necessary
+%         \item \text{Limited to local regions:}% Stability often guaranteed only locally unless global bounds are proven
+%         \item \text{Quantitative bounds may be loose:}% Worst-case growth rate assumptions can overestimate the effect of perturbations
+%     \end{itemize}
+% \end{frame}
+
 \begin{frame}
-	\frametitle{Conceptual Links Between Sections}
-	\begin{itemize}
-        \item \textbf{Lyapunov Functions:} Central in both cases, quantify energy and decay
-        \item \textbf{Main Difference:} Convergence to origin vs. convergence to a bounded set
-        \item \textbf{Comparison Lemma:} Powerful for estimating solution bounds in both cases
-        \item \textbf{Ultimate Boundedness:} Reflects robustness, common in practical control
-        \item \textbf{Design Implication:} Small perturbations can be tolerated if decay is fast; persistent ones require constraint-aware design
-    \end{itemize}
+    \frametitle{Summary: Insights and Tradeoffs}
+    \begin{columns}[t]
+        \column{0.48\textwidth}
+        \textbf{Conceptual Insights}
+        \begin{itemize}
+            \item Lyapunov methods unify time-varying and perturbed stability analysis
+            \item Key difference: convergence to origin vs. convergence to a bound
+            \item Ultimate boundedness reflects robustness in practical systems
+        \end{itemize}
 
-    \vspace{0.5em}
-    \textbf{Takeaway:} Both frameworks enhance system analysis in the presence of uncertainty. Knowing the type of perturbation guides appropriate control strategies.
-\end{frame}
+        \column{0.48\textwidth}
+        \textbf{Benefits \& Limitations}
+        \begin{itemize}
+            \item Systematic and broadly applicable
+            \item But: Lyapunov construction is hard
+            \item Often conservative; usually local
+        \end{itemize}
+    \end{columns}
+    \vspace{1em}
+    \textbf{Takeaway:} \\
+	Exponential stability of a nominal system can ensure robust behaviour in the presence of perturbations, but only if the perturbation is appropriately characterised.
 
-\begin{frame}
-    \frametitle{Benefits and Drawbacks of Lyapunov-Based Analysis}
-
-    \textbf{Benefits}
-    \begin{itemize}
-        \item \text{General applicability:} %Works for nonlinear, time-varying, and perturbed systems
-        \item \text{Rigorous and systematic:}% Provides sufficient conditions for stability and boundedness
-        \item \text{Insightful design tool:} %Helps in controller synthesis and robustness analysis
-        \item \text{Comparison lemma:}% Enables practical bounding of trajectories without solving the system
-        \item \text{Handles uncertainty:}% Applicable to both modeling errors (vanishing) and disturbances (non-vanishing)
-    \end{itemize}
-
-    \textbf{Drawbacks}
-    \begin{itemize}
-        \item \text{Constructing Lyapunov functions is hard:}% No general method for nonlinear systems
-        \item \text{Results are conservative:}% Conditions are sufficient but not necessary
-        \item \text{Limited to local regions:}% Stability often guaranteed only locally unless global bounds are proven
-        \item \text{Quantitative bounds may be loose:}% Worst-case growth rate assumptions can overestimate the effect of perturbations
-    \end{itemize}
 \end{frame}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
 \begin{frame}[allowframebreaks]
     \frametitle{References}
     \nocite{*} 
