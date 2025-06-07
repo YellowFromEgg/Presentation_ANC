@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Vanishing Perturbations}{5}{0}{2}
+\beamer@sectionintoc {2}{Vanishing Perturbations}{6}{0}{2}
 \beamer@sectionintoc {3}{Non-Vanishing Perturbations}{9}{0}{3}
 \beamer@sectionintoc {4}{Summary and Discussion}{13}{0}{4}

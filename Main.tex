@@ -117,22 +117,30 @@
     \end{columns}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Vanishing Perturbations}
 \begin{frame}
-	\frametitle{Perturbation Model for Vanishing Perturbation Models}
+	\frametitle{Perturbation Models: Vanishing vs. Non-Vanishing}
+	\textbf{Motivation:} Exact modeling is rarely possible due to disturbances, unmodeled dynamics, or parameter drift.
+
+	\vspace{0.5em}
+	\textbf{System:} $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
 	\begin{itemize}
-		\item Exact Modelling rarley feasible due to modelling errors/external disturbances or parameter drift
-		\item $\dot{\underline{x}}=f(\underline{x})+g(\underline{x},t)$
-		\begin{itemize}
-			\item f is locally Lipschitz
-			\item g is piecewise continuous in t and locally Lipschitz
-			\item generally unknown but bounded
-		\end{itemize}
-		\item $g(0,t)$ and $g(\underline{x},t)=0$ for $t\rightarrow\infty$
+		\item $f$ locally Lipschitz
+		\item $g$ piecewise continuous in $t$, locally Lipschitz in $\underline{x}$
+		\item $g$ generally unknown, but bounded
 	\end{itemize}
+
+	\vspace{0.5em}
+	\textbf{Vanishing Perturbation:} $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$ \\
+	$\Rightarrow$ Exponential stability of the origin is preserved (robustness)
+
+	\vspace{0.3em}
+	\textbf{Non-Vanishing Perturbation:} $g(\underline{x}, t) \not\to 0$ as $\underline{x} \to 0$ \\
+	$\Rightarrow$ Solutions remain bounded (ultimate boundedness)
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vanishing Perturbations}
 
 \begin{frame}
 	\frametitle{Lyapunov Stability Theorems}
@@ -158,112 +166,203 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Comparison Functions}
-	% \begin{itemize}
-	% 	\item Differences and Benefits of this approach
-	% 	\item Corollary 1
-	% \end{itemize}
+	\frametitle{Comparison Lemma – Example}
+
+	\textbf{System:}
+	\begin{align*}
+		\dot{\underline{x}} = -a\,\underline{x}(t) + g(t, \underline{x}), \quad \underline{x}(0) = 0, \quad a > 0
+	\end{align*}
+
 	\textbf{Assumptions:}
 	\begin{itemize}
-		\item Origin $\underline{x}=0$ is an exponentially stable equilibrium point
-		\item Perturbation vanishes
+		\item $\underline{x}(t) \geq 0 \quad \forall\, t \geq 0$
+		\vspace{0.3em}
+		\item $g(t, \underline{x}) \leq b\,\underline{x}(t) \quad \forall\, x \geq \underline{x} \geq 0$
 	\end{itemize}
-	\vspace{0.5cm}
-	\textbf{Exponential Stability:}
+
+	\textbf{Integral Condition:}
 	\begin{align*}
-		\|g(\underline{x},t)\| \leq \gamma(t)\|\underline{x}\| \text{ with }\int_{t_0}^{t}\gamma(\tau)d\tau<\epsilon(t-t_o)+\eta
+		\underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \gamma(\tau)\, d\tau 
+		= \underline{x}_0 + \int_{t_0}^{t} [-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)]\, d\tau
 	\end{align*}
+
+	\textbf{Bound for Derivative:}
 	\begin{align*}
-		\text{with } \epsilon < \frac{c_1c_3}{c_2c_4}
+		\dot{\underline{x}}(t) \leq -a\,\underline{x}(t) + b\,\underline{x}(t) = -(a - b)\,\underline{x}(t)
 	\end{align*}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Example: Linear Time-Varying System}
-	% \begin{itemize}
-	% 	\item $\dot{\underline{x}}=[A(T)+B(t)]\underline{x}$
-	% 	\item Lyapunov function $V(t,\underline{x})$ is positive definite and derivative negative definite
-	% 	\item $g(t,\underline{x}) = B(t)\underline{x} \Rightarrow \|g(t,\underline{x})\| \leq \|B(t)\| \cdot \|\underline{x}\| = \gamma(t) \|\underline{x}\|$
-	% 	\item $\int_{t_0}^{t}\gamma(\tau)d\tau<\epsilon(t-t_o)+\eta$
-	% 	\item[$\Rightarrow$] Exponetial stability of nominal system is preserved under vanishing perturbations
-	% \end{itemize}
-	\textbf{Perturbed Linear Time-Varying System:}
+	\frametitle{Comparison Lemma – Example}
+
 	\begin{align*}
-		\dot{\underline{x}}=[A(t)+B(t)]\underline{x}
+		\underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau 
+		\leq \underline{x}_0 - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
 	\end{align*}
-	\textbf{Assumptions:}
-	\begin{itemize}
-		\item $A(t)$ is uniformly bounded
-		\item Origin of nominal system is uniformly exponentially stable
-		\item $B(t) \rightarrow 0$ as $t\rightarrow\infty$
-		\item Lyapunov function $V(t,\underline{x})$ is positive definite and derivative negative definite
-	\end{itemize}
+
+	If $(a - b)\,\underline{x}$ is continuous, positive definite, and non-decreasing, then:
 	\begin{align*}
-		g(t,\underline{x}) = B(t)\underline{x} \Rightarrow \|g(t,\underline{x})\| \leq \|B(t)\| \cdot \|\underline{x}\| = \gamma(t) \|\underline{x}\|
+		\lim_{t \to \infty} \underline{x}(t) = 0
 	\end{align*}
-	$\Rightarrow$ Exponential stability of nominal system is preserved under vanishing perturbations
-	
+
+	which ensures that the system loses more than it gains.
+
+	\vspace{0.5em}
+	Furthermore, exponential decay is guaranteed:
+	\begin{align*}
+		\underline{x}(t) \leq \underline{x}_0\, e^{-(a - b)t}
+	\end{align*}
 \end{frame}
+
+
+% \begin{frame}
+% 	\frametitle{Comparison Functions}
+% 	% \begin{itemize}
+% 	% 	\item Differences and Benefits of this approach
+% 	% 	\item Corollary 1
+% 	% \end{itemize}
+% 	\textbf{Assumptions:}
+% 	\begin{itemize}
+% 		\item Origin $\underline{x}=0$ is an exponentially stable equilibrium point
+% 		\item Perturbation vanishes
+% 	\end{itemize}
+% 	\vspace{0.5cm}
+% 	\textbf{Exponential Stability:}
+% 	\begin{align*}
+% 		\|g(\underline{x},t)\| \leq \gamma(t)\|\underline{x}\| \text{ with }\int_{t_0}^{t}\gamma(\tau)\,d\tau<\epsilon(t-t_o)+\eta
+% 	\end{align*}
+% 	\begin{align*}
+% 		\text{with } \epsilon < \frac{c_1c_3}{c_2c_4}
+% 	\end{align*}
+% \end{frame}
+
+% \begin{frame}
+% 	\frametitle{Example: Linear Time-Varying System}
+% 	% \begin{itemize}
+% 	% 	\item $\dot{\underline{x}}=[A(T)+B(t)]\underline{x}$
+% 	% 	\item Lyapunov function $V(t,\underline{x})$ is positive definite and derivative negative definite
+% 	% 	\item $g(t,\underline{x}) = B(t)\underline{x} \Rightarrow \|g(t,\underline{x})\| \leq \|B(t)\| \cdot \|\underline{x}\| = \gamma(t) \|\underline{x}\|$
+% 	% 	\item $\int_{t_0}^{t}\gamma(\tau)\,d\tau<\epsilon(t-t_o)+\eta$
+% 	% 	\item[$\Rightarrow$] Exponetial stability of nominal system is preserved under vanishing perturbations
+% 	% \end{itemize}
+% 	\textbf{Perturbed Linear Time-Varying System:}
+% 	\begin{align*}
+% 		\dot{\underline{x}}=[A(t)+B(t)]\underline{x}
+% 	\end{align*}
+% 	\textbf{Assumptions:}
+% 	\begin{itemize}
+% 		\item $A(t)$ is uniformly bounded
+% 		\item Origin of nominal system is uniformly exponentially stable
+% 		\item $B(t) \rightarrow 0$ as $t\rightarrow\infty$
+% 		\item Lyapunov function $V(t,\underline{x})$ is positive definite and derivative negative definite
+% 	\end{itemize}
+% 	\begin{align*}
+% 		g(t,\underline{x}) = B(t)\underline{x} \Rightarrow \|g(t,\underline{x})\| \leq \|B(t)\| \cdot \|\underline{x}\| = \gamma(t) \|\underline{x}\|
+% 	\end{align*}
+% 	$\Rightarrow$ Exponential stability of nominal system is preserved under vanishing perturbations
+	
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Non-Vanishing Perturbations}
 
 \begin{frame}
-	\frametitle{Perturbation Model for Non-Vanishing Perturbations}
-	% \begin{itemize}
-	% 	\item Impede the system's convergence towards the origin
-	% 	\item Analysing the behavior in terms of boundedness/ultimate boundedness
-	% 	\item Gurantee that the state will remain within a small neighborhood around the origin
-	% \end{itemize}
-	\begin{itemize}
-        \item $g(t,\underline{x})$ does not vanish, persistent input or modeling error
-        \item Origin is no longer an equilibrium
-        \item Use ultimate boundedness: trajectories enter and remain in a compact set
-        \item Stability becomes input-to-state-like (robustness to bounded disturbances)
-    \end{itemize}
-\end{frame}
+	\frametitle{Lyapunov-Based Conditions for Boundedness}
 
-\begin{frame}
-	\frametitle{Lyapunov Based Conditions for Boundednes}
-	% \begin{itemize}
-	% 	\item Why only boundedness
-	% 	\item Lemma 2 for Ultimate Boundedness
-	% \end{itemize}
 	\textbf{Assumptions:}
 	\begin{itemize}
-		\item $\underline{x}=0$ is exponentially stable for the nominal system
-        \item Non-vanishing, bounded perturbation $g(\underline{x},t)$
-        \item Lyapunov function $V(t,\underline{x})$ is positive definite, radially unbounded
+		\item $\underline{x} = 0$ is exponentially stable for the nominal system
+		\item Non-vanishing, bounded perturbation $g(\underline{x}, t)$
+		\item Lyapunov function $V(t, \underline{x})$ is positive definite and radially unbounded
+		\item Perturbation bound:
 		\begin{align*}
-			\|g(\underline{x},t)\| \leq \delta<\frac{c_3}{c_4}\sqrt{\frac{c_1}{c_2}}\theta r, \text{ with } \in(0,1), r>0
+			\|g(\underline{x}, t)\| \leq \delta < \frac{c_3}{c_4} \sqrt{\frac{c_1}{c_2}}\, \theta r, \quad \theta \in (0,1),\ r > 0
 		\end{align*}
 	\end{itemize}
 \end{frame}
 
+
 \begin{frame}
-	\frametitle{Lyapunov Based Conditions for Boundednes}
-	\textbf{Exponetial Stability:} \\
-	For all initial conditions $\|\underline{x}(t_0)|\leq \sqrt{c_1/c_2}r$
+	\frametitle{Lyapunov-Based Conditions for Boundedness}
+
+	\textbf{Exponential Stability:} \\
+	For all initial conditions satisfying $\|\underline{x}(t_0)\| \leq \sqrt{c_1/c_2} \, r$:
 	\begin{align*}
-		\|\underline{x}(t)\| \leq ke^{-\gamma(t-t_0)}\|\underline{x}(t_0)\|, t_0 \leq t \leq t_0+T
+		\|\underline{x}(t)\| \leq k\, e^{-\gamma (t - t_0)} \|\underline{x}(t_0)\|, \quad t_0 \leq t \leq t_0 + T
 	\end{align*}
+
+	\textbf{Ultimate Boundedness:}
 	\begin{align*}
-		\|\underline{x}(t)\| \leq b \forall\, t \geq t_0+T
+		\|\underline{x}(t)\| \leq b \quad \forall\, t \geq t_0 + T
 	\end{align*}
+
+	\textbf{Parameters:}
 	\begin{align*}
-		\text{where } k=\sqrt{\frac{c_2}{c_1}},\,\gamma=\frac{(1-\theta)c_3}{2c_2},\, b=\frac{c_4}{c_3}k\frac{\delta}{\theta}
+		k = \sqrt{\frac{c_2}{c_1}}, \quad \gamma = \frac{(1 - \theta)c_3}{2c_2}, \quad b = \frac{c_4}{c_3}k \frac{\delta}{\theta}
 	\end{align*}
 \end{frame}
 
-
 \begin{frame}
-	\frametitle{Example: Non-Vanishing Perturbation in a Nonlinear System}
+	\frametitle{Example: Bounded Disturbance Response}
+
+	\textbf{System:}
+	\begin{align*}
+		\dot{x}_1 &= x_2 \\
+		\dot{x}_2 &= -2x_1 - 3x_2 + d, \quad |d| \leq \delta
+	\end{align*}
+
+	\textbf{Interpretation:}
 	\begin{itemize}
-		\item As a special case of non-vanishing perturbations
-		\item Stability Theorems
-		\item Case distinctions
+		\item Mass-spring-damper system with constant external force
+		\item Nominal system ($d = 0$): exponentially stable
 	\end{itemize}
+
+	\vspace{0.3em}
+
+	\textbf{Lyapunov Candidate:} $V(\underline{x}) = \underline{x}^T P \underline{x}$
+
+	\vspace{0.3em}
+	\begin{itemize}
+		\item $P > 0$ solves $A^T P + P A = -Q$, with $Q = I$
+		\item $A = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$
+	\end{itemize}
+
+	\vspace{0.3em}
+	\textbf{Bounds:} \quad $c_1 \|\underline{x}\|^2 \leq V(\underline{x}) \leq c_2 \|\underline{x}\|^2$
 \end{frame}
+
+
+\begin{frame}
+	\frametitle{Example: Bounded Disturbance Response}
+
+	\textbf{Lyapunov Derivative:}
+	\[
+		\dot{V} \leq -c_3 \|\underline{x}\|^2 + c_4 \delta \|\underline{x}\|
+	\]
+
+	\textbf{Compare to:}
+	\[
+		\dot{V} \leq -c_3 \|\underline{x}\|^2 + c_4 \|g(\underline{x}, t)\| \|\underline{x}\|
+	\]
+
+	\textbf{Boundedness Condition:}
+	\[
+		\|g(\underline{x}, t)\| \leq \delta < \frac{c_3}{c_4} \sqrt{\frac{c_1}{c_2}} \theta r, \quad \theta \in (0,1)
+	\]
+
+	\vspace{0.3em}
+	\textbf{Then:}
+	\begin{itemize}
+		\item $\|\underline{x}(t)\| \leq b$ for $t \geq t_0 + T$
+		\item $b = \dfrac{c_4}{c_3} k \dfrac{\delta}{\theta}, \quad k = \sqrt{c_2/c_1}, \quad \gamma = \dfrac{(1 - \theta)c_3}{2c_2}$
+	\end{itemize}
+
+	\vspace{0.3em}
+	\textbf{Conclusion:} State converges to a ball around the origin; size scales with $\delta$
+\end{frame}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary and Discussion}
