@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  7 JUN 2025 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  8 JUN 2025 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1309,7 +1309,7 @@ Overfull \vbox (10.6351pt too high) detected at line 193
 [10
 
 ]
-Overfull \vbox (18.40034pt too high) detected at line 332
+Overfull \vbox (18.40034pt too high) detected at line 333
  []
 
 
@@ -1317,7 +1317,7 @@ Overfull \vbox (18.40034pt too high) detected at line 332
 [11
 
 ]
-Overfull \vbox (19.16835pt too high) detected at line 362
+Overfull \vbox (19.16835pt too high) detected at line 363
  []
 
 
@@ -1325,7 +1325,7 @@ Overfull \vbox (19.16835pt too high) detected at line 362
 [12
 
 ]
-Overfull \vbox (0.56168pt too high) detected at line 428
+Overfull \vbox (0.56168pt too high) detected at line 429
  []
 
 
@@ -1335,57 +1335,57 @@ Overfull \vbox (0.56168pt too high) detected at line 428
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 434.
+(hyperref)                removing `\translate ' on input line 435.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 439.
+Package hyperref Warning: Suppressing link with empty target on input line 440.
 
 <logos/pdf_logo.pdf, id=555, 175.48561pt x 184.46918pt>
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 439.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 440.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 439.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 440.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <6> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 439.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 440.
 
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 439.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 440.
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
 File: logos/pdf_logo.pdf Graphic file (type pdf)
 <use logos/pdf_logo.pdf>
-Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 439.
+Package pdftex.def Info: logos/pdf_logo.pdf  used on input line 440.
 (pdftex.def)             Requested size: 11.38109pt x 11.96277pt.
 
 
@@ -1420,13 +1420,13 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 Here is how much of TeX's memory you used:
  38060 strings out of 473218
  778598 string characters out of 5716975
- 1563548 words of memory out of 5000000
+ 1564548 words of memory out of 5000000
  60565 multiletter control sequences out of 15000+600000
  615690 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  142i,18n,137p,2003b,1577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Main.pdf (15 pages, 382816 bytes).
+Output written on Main.pdf (15 pages, 382980 bytes).
 PDF statistics:
  713 PDF objects out of 1000 (max. 8388607)
  416 compressed objects within 5 object streams

@@ -60,10 +60,10 @@
 	\vspace{0.5cm}
     \textbf{Objective:}
     \begin{itemize}
+		\item Formulate practical and broadly applicable stability conditions
         \item Analyze stability under \textbf{vanishing perturbations} using comparison functions
         \item Study ultimate boundedness for systems with \textbf{non-vanishing perturbations}
-        \item Apply Lyapunov-based methods for robust analysis of nonlinear, time-varying systems
-        \item Formulate practical and broadly applicable stability conditions
+        % \item Apply Lyapunov-based methods for robust analysis of nonlinear, time-varying systems
     \end{itemize}
 \end{frame}
 
@@ -119,7 +119,7 @@
 
 \begin{frame}
 	\frametitle{Perturbation Models: Vanishing vs. Non-Vanishing}
-	\textbf{Motivation:} Exact modeling is rarely possible due to disturbances, unmodeled dynamics, or parameter drift.
+	\textbf{Motivation:} Real-world systems are subject to time dependence, modelling errors and external disturbances
 
 	\vspace{0.5em}
 	\textbf{System:} $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
@@ -212,6 +212,7 @@
 	\begin{align*}
 		\underline{x}(t) \leq \underline{x}_0\, e^{-(a - b)t}
 	\end{align*}
+	% from differntial equations
 \end{frame}
 
 
@@ -307,8 +308,8 @@
 
 	\textbf{System:}
 	\begin{align*}
-		\dot{x}_1 &= x_2 \\
-		\dot{x}_2 &= -2x_1 - 3x_2 + d, \quad |d| \leq \delta
+		\dot{x}_1 &= x_2 \\ % postion
+		\dot{x}_2 &= -2x_1 - 3x_2 + d, \quad |d| \leq \delta % velocity
 	\end{align*}
 
 	\textbf{Interpretation:}
