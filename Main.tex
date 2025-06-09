@@ -117,25 +117,55 @@
     \end{columns}
 \end{frame}
 
+% \begin{frame}
+% 	\frametitle{Perturbation Models: Vanishing vs. Non-Vanishing}
+% 	\textbf{Motivation:} Real-world systems are subject to time dependence, modelling errors and external disturbances
+
+% 	\vspace{0.5em}
+% 	\textbf{System:} $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
+% 	\begin{itemize}
+% 		\item $f$ locally Lipschitz
+% 		\item $g$ piecewise continuous in $t$, locally Lipschitz in $\underline{x}$
+% 		\item $g$ generally unknown, but bounded
+% 	\end{itemize}
+
+% 	\vspace{0.5em}
+% 	\textbf{Vanishing Perturbation:} $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$ \\
+% 	$\Rightarrow$ Exponential stability of the origin is preserved (robustness)
+
+% 	\vspace{0.3em}
+% 	\textbf{Non-Vanishing Perturbation:} $g(\underline{x}, t) \not\to 0$ as $\underline{x} \to 0$ \\
+% 	$\Rightarrow$ Solutions remain bounded (ultimate boundedness)
+% \end{frame}
+
+
 \begin{frame}
-	\frametitle{Perturbation Models: Vanishing vs. Non-Vanishing}
+	\frametitle{Understanding Perturbation Types}
+
 	\textbf{Motivation:} Real-world systems are subject to time dependence, modelling errors and external disturbances
+	
+	\vspace{0.5cm}
+	\textbf{General System Form:} 
+	\[\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)\]
+	
+	\vspace{0.5cm}
+	\begin{columns}[t,totalwidth=\textwidth]
+        \column{0.48\textwidth}
+		\textbf{Vanishing Perturbation:}
+		\begin{itemize}
+			\item $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$
+			\item Preserves exponential stability
+			\item Examples: modeling errors
+		\end{itemize}
 
-	\vspace{0.5em}
-	\textbf{System:} $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
-	\begin{itemize}
-		\item $f$ locally Lipschitz
-		\item $g$ piecewise continuous in $t$, locally Lipschitz in $\underline{x}$
-		\item $g$ generally unknown, but bounded
-	\end{itemize}
-
-	\vspace{0.5em}
-	\textbf{Vanishing Perturbation:} $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$ \\
-	$\Rightarrow$ Exponential stability of the origin is preserved (robustness)
-
-	\vspace{0.3em}
-	\textbf{Non-Vanishing Perturbation:} $g(\underline{x}, t) \not\to 0$ as $\underline{x} \to 0$ \\
-	$\Rightarrow$ Solutions remain bounded (ultimate boundedness)
+        \column{0.48\textwidth}
+		\textbf{Non-Vanishing Perturbation:}
+		\begin{itemize}
+			\item $g(\underline{x}, t) \not\to 0$ as $\underline{x} \to 0$
+			\item Leads to ultimate boundedness
+			\item Examples: constant disturbances
+		\end{itemize}
+    \end{columns}
 \end{frame}
 
 
@@ -403,30 +433,52 @@
 %     \end{itemize}
 % \end{frame}
 
+% \begin{frame}
+%     \frametitle{Summary: Insights and Tradeoffs}
+%     \begin{columns}[t]
+%         \column{0.48\textwidth}
+%         \textbf{Conceptual Insights}
+%         \begin{itemize}
+%             \item Lyapunov methods unify time-varying and perturbed stability analysis
+%             \item Key difference: convergence to origin vs. convergence to a bound
+%             \item Ultimate boundedness reflects robustness in practical systems
+%         \end{itemize}
+
+%         \column{0.48\textwidth}
+%         \textbf{Benefits \& Limitations}
+%         \begin{itemize}
+%             \item Systematic and broadly applicable
+%             \item But: Lyapunov construction is hard
+%             \item Often conservative; usually local
+%         \end{itemize}
+%     \end{columns}
+%     \vspace{1em}
+%     \textbf{Takeaway:} \\
+% 	Exponential stability of a nominal system can ensure robust behaviour in the presence of perturbations, but only if the perturbation is appropriately characterised.
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Summary: Insights and Tradeoffs}
-    \begin{columns}[t]
-        \column{0.48\textwidth}
-        \textbf{Conceptual Insights}
-        \begin{itemize}
-            \item Lyapunov methods unify time-varying and perturbed stability analysis
-            \item Key difference: convergence to origin vs. convergence to a bound
-            \item Ultimate boundedness reflects robustness in practical systems
-        \end{itemize}
-
-        \column{0.48\textwidth}
-        \textbf{Benefits \& Limitations}
-        \begin{itemize}
-            \item Systematic and broadly applicable
-            \item But: Lyapunov construction is hard
-            \item Often conservative; usually local
-        \end{itemize}
-    \end{columns}
-    \vspace{1em}
-    \textbf{Takeaway:} \\
-	Exponential stability of a nominal system can ensure robust behaviour in the presence of perturbations, but only if the perturbation is appropriately characterised.
-
+    \frametitle{Key Insights and Practical Implications}
+    
+    \textbf{Theoretical Insights:}
+    \begin{itemize}
+        \setlength{\itemsep}{8pt}
+        \item Lyapunov methods unify analysis of time-varying and perturbed systems
+        \item Perturbation type determines achievable stability properties
+        \item Ultimate boundedness reflects real-world system robustness
+    \end{itemize}
+    
+    \vspace{0.8cm}
+    \textbf{Design Implications:}
+    \begin{itemize}
+        \setlength{\itemsep}{8pt}
+        \item Small, vanishing perturbations: maintain exponential convergence
+        \item Persistent disturbances: design for bounded operation
+        \item Robustness requires appropriate perturbation characterization
+    \end{itemize}
 \end{frame}
+
 
 
 
