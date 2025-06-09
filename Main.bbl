@@ -17,686 +17,187 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
-  \entry{he2024olympiadbench}{misc}{}{}
-    \name{author}{14}{}{%
-      {{hash=HC}{%
-         family={He},
-         familyi={H\bibinitperiod},
-         given={Chaoqun},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=LR}{%
-         family={Luo},
-         familyi={L\bibinitperiod},
-         given={Renjie},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={Bai},
-         familyi={B\bibinitperiod},
-         given={Yuzhuo},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=HS}{%
-         family={Hu},
-         familyi={H\bibinitperiod},
-         given={Shengding},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=TZL}{%
-         family={Thai},
-         familyi={T\bibinitperiod},
-         given={Zhen\bibnamedelima Leng},
-         giveni={Z\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Shen},
-         familyi={S\bibinitperiod},
-         given={Junhao},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Hu},
-         familyi={H\bibinitperiod},
-         given={Jinyi},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=HX}{%
-         family={Han},
-         familyi={H\bibinitperiod},
-         given={Xu},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=HY}{%
-         family={Huang},
-         familyi={H\bibinitperiod},
-         given={Yujie},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=ZY}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Yuxiang},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=LJ}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Jie},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=QL}{%
-         family={Qi},
-         familyi={Q\bibinitperiod},
-         given={Lei},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=LZ}{%
-         family={Liu},
-         familyi={L\bibinitperiod},
-         given={Zhiyuan},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sun},
-         familyi={S\bibinitperiod},
-         given={Maosong},
-         giveni={M\bibinitperiod},
+  \entry{gaeta_perturbation_2009}{incollection}{}{}
+    \name{author}{1}{}{%
+      {{hash=GG}{%
+         family={Gallavotti},
+         familyi={G\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
       }}%
     }
-    \strng{namehash}{HC+1}
-    \strng{fullhash}{HCLRBYHSTZLSJHJHXHYZYLJQLLZSM1}
+    \name{editor}{1}{}{%
+      {{hash=GG}{%
+         family={Gaeta},
+         familyi={G\bibinitperiod},
+         given={Giuseppe},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \strng{namehash}{GG1}
+    \strng{fullhash}{GG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2024}
+    \field{labelyear}{2009}
     \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \verb{eprint}
-    \verb 2402.14008
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Perturbation {Theory}}
+    \verb{doi}
+    \verb 10.1007/978-1-0716-2621-4_396
     \endverb
-    \field{title}{OlympiadBench: A Challenging Benchmark for Promoting AGI with Olympiad-Level Bilingual Multimodal Scientific Problems}
-    \field{year}{2024}
+    \field{isbn}{978-1-0716-2620-7 978-1-0716-2621-4}
+    \field{note}{Series Title: Encyclopedia of Complexity and Systems Science Series}
+    \field{pages}{1\bibrangedash 14}
+    \field{title}{Perturbation {Theory}}
+    \verb{url}
+    \verb https://link.springer.com/10.1007/978-1-0716-2621-4\_396
+    \endverb
+    \list{location}{1}{%
+      {New York, NY}%
+    }
+    \field{year}{2009}
+    \field{urlday}{26}
+    \field{urlmonth}{05}
+    \field{urlyear}{2025}
   \endentry
 
-  \entry{hochlehnert_sober_2025}{misc}{}{}
-    \name{author}{6}{}{%
-      {{hash=HA}{%
-         family={Hochlehnert},
-         familyi={H\bibinitperiod},
-         given={Andreas},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BH}{%
-         family={Bhatnagar},
-         familyi={B\bibinitperiod},
-         given={Hardik},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=UV}{%
-         family={Udandarao},
-         familyi={U\bibinitperiod},
-         given={Vishaal},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=AS}{%
-         family={Albanie},
-         familyi={A\bibinitperiod},
-         given={Samuel},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={Prabhu},
-         familyi={P\bibinitperiod},
-         given={Ameya},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BM}{%
-         family={Bethge},
-         familyi={B\bibinitperiod},
-         given={Matthias},
-         giveni={M\bibinitperiod},
+  \entry{khalil_nonlinear_control}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=KHK}{%
+         family={Khalil},
+         familyi={K\bibinitperiod},
+         given={Hassan\bibnamedelima K.},
+         giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {arXiv}%
+      {Pearson}%
     }
-    \strng{namehash}{HA+1}
-    \strng{fullhash}{HABHUVASPABM1}
+    \strng{namehash}{KHK1}
+    \strng{fullhash}{KHK1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2025}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
     \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \verb{doi}
-    \verb 10.48550/arXiv.2504.07086
-    \endverb
-    \field{shorttitle}{A {Sober} {Look} at {Progress} in {Language} {Model} {Reasoning}}
-    \field{title}{A {Sober} {Look} at {Progress} in {Language} {Model} {Reasoning}: {Pitfalls} and {Paths} to {Reproducibility}}
-    \verb{url}
-    \verb http://arxiv.org/abs/2504.07086
-    \endverb
-    \field{annotation}{%
-    Comment: Technical Report%
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{edition}{Global edition}
+    \field{isbn}{978-1-292-06069-9}
+    \field{title}{Nonlinear control}
+    \list{location}{1}{%
+      {Boston Munich}%
     }
-    \field{month}{04}
-    \field{year}{2025}
-    \field{urlday}{16}
-    \field{urlmonth}{05}
-    \field{urlyear}{2025}
+    \field{year}{2015}
   \endentry
 
-  \entry{huang_towards_2023}{misc}{}{}
-    \name{author}{2}{}{%
-      {{hash=HJ}{%
-         family={Huang},
-         familyi={H\bibinitperiod},
-         given={Jie},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=CKCC}{%
-         family={Chang},
-         familyi={C\bibinitperiod},
-         given={Kevin Chen-Chuan},
-         giveni={K\bibinitperiod\bibinitdelim C\bibinithyphendelim C\bibinitperiod},
+  \entry{khalil_nonlinear_systems}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=KHK}{%
+         family={Khalil},
+         familyi={K\bibinitperiod},
+         given={Hassan\bibnamedelima K.},
+         giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {arXiv}%
+      {Pearson Education}%
     }
-    \strng{namehash}{HJ+1}
-    \strng{fullhash}{HJCKCC1}
+    \strng{namehash}{KHK1}
+    \strng{fullhash}{KHK1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2023}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
     \field{labeldatesource}{}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \verb{doi}
-    \verb 10.48550/arXiv.2212.10403
-    \endverb
-    \field{shorttitle}{Towards {Reasoning} in {Large} {Language} {Models}}
-    \field{title}{Towards {Reasoning} in {Large} {Language} {Models}: {A} {Survey}}
-    \verb{url}
-    \verb http://arxiv.org/abs/2212.10403
-    \endverb
-    \field{annotation}{%
-    Comment: ACL 2023 Findings, 15 pages%
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{edition}{Pearson new internat. ed., 3. ed}
+    \field{isbn}{978-1-292-05385-1}
+    \field{series}{Always learning}
+    \field{title}{Nonlinear systems}
+    \list{location}{1}{%
+      {Harlow}%
     }
-    \field{month}{05}
-    \field{year}{2023}
-    \field{urlday}{16}
-    \field{urlmonth}{05}
-    \field{urlyear}{2025}
+    \field{year}{2014}
   \endentry
 
-  \entry{jain_livecodebench_2024}{misc}{}{}
-    \name{author}{10}{}{%
-      {{hash=JN}{%
-         family={Jain},
-         familyi={J\bibinitperiod},
-         given={Naman},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=HK}{%
-         family={Han},
-         familyi={H\bibinitperiod},
-         given={King},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Gu},
-         familyi={G\bibinitperiod},
-         given={Alex},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=LWD}{%
-         family={Li},
+  \entry{liu_unified_2022}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Liu},
          familyi={L\bibinitperiod},
-         given={Wen-Ding},
-         giveni={W\bibinithyphendelim D\bibinitperiod},
-      }}%
-      {{hash=YF}{%
-         family={Yan},
-         familyi={Y\bibinitperiod},
-         given={Fanjia},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ZT}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Tianjun},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=WS}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Sida},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SLA}{%
-         family={Solar-Lezama},
-         familyi={S\bibinithyphendelim L\bibinitperiod},
-         given={Armando},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SK}{%
-         family={Sen},
-         familyi={S\bibinitperiod},
-         given={Koushik},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=SI}{%
-         family={Stoica},
-         familyi={S\bibinitperiod},
-         given={Ion},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \strng{namehash}{JN+1}
-    \strng{fullhash}{JNHKGALWDYFZTWSSLASKSI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2024}
-    \field{labeldatesource}{}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \verb{doi}
-    \verb 10.48550/arXiv.2403.07974
-    \endverb
-    \field{shorttitle}{{LiveCodeBench}}
-    \field{title}{{LiveCodeBench}: {Holistic} and {Contamination} {Free} {Evaluation} of {Large} {Language} {Models} for {Code}}
-    \verb{url}
-    \verb http://arxiv.org/abs/2403.07974
-    \endverb
-    \field{annotation}{%
-    Comment: Website - https://livecodebench.github.io/%
-    }
-    \field{month}{06}
-    \field{year}{2024}
-    \field{urlday}{20}
-    \field{urlmonth}{05}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{muennighoff_s1_2025}{misc}{}{}
-    \name{author}{10}{}{%
-      {{hash=MN}{%
-         family={Muennighoff},
-         familyi={M\bibinitperiod},
-         given={Niklas},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=YZ}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Zitong},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=SW}{%
-         family={Shi},
-         familyi={S\bibinitperiod},
-         given={Weijia},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=LXL}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Xiang\bibnamedelima Lisa},
-         giveni={X\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=FFL}{%
-         family={Fei-Fei},
-         familyi={F\bibinithyphendelim F\bibinitperiod},
-         given={Li},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=HH}{%
-         family={Hajishirzi},
-         familyi={H\bibinitperiod},
-         given={Hannaneh},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=ZL}{%
-         family={Zettlemoyer},
-         familyi={Z\bibinitperiod},
-         given={Luke},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=LP}{%
-         family={Liang},
-         familyi={L\bibinitperiod},
-         given={Percy},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=CE}{%
-         family={Candès},
-         familyi={C\bibinitperiod},
-         given={Emmanuel},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=HT}{%
-         family={Hashimoto},
-         familyi={H\bibinitperiod},
-         given={Tatsunori},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \strng{namehash}{MN+1}
-    \strng{fullhash}{MNYZSWLXLFFLHHZLLPCEHT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2025}
-    \field{labeldatesource}{}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.48550/arXiv.2501.19393
-    \endverb
-    \field{shorttitle}{s1}
-    \field{title}{s1: {Simple} test-time scaling}
-    \verb{url}
-    \verb http://arxiv.org/abs/2501.19393
-    \endverb
-    \field{annotation}{%
-    Comment: 46 pages (9 main), 10 figures, 15 tables%
-    }
-    \field{month}{03}
-    \field{year}{2025}
-    \field{urlday}{18}
-    \field{urlmonth}{05}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{ott_thoughtsource_2023}{article}{}{}
-    \name{author}{9}{}{%
-      {{hash=OS}{%
-         family={Ott},
-         familyi={O\bibinitperiod},
-         given={Simon},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HK}{%
-         family={Hebenstreit},
-         familyi={H\bibinitperiod},
-         given={Konstantin},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=LV}{%
-         family={Liévin},
-         familyi={L\bibinitperiod},
-         given={Valentin},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=HCE}{%
-         family={Hother},
-         familyi={H\bibinitperiod},
-         given={Christoffer\bibnamedelima Egeberg},
-         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=MM}{%
-         family={Moradi},
-         familyi={M\bibinitperiod},
-         given={Milad},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MM}{%
-         family={Mayrhauser},
-         familyi={M\bibinitperiod},
-         given={Maximilian},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=PR}{%
-         family={Praas},
-         familyi={P\bibinitperiod},
-         given={Robert},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=WO}{%
-         family={Winther},
-         familyi={W\bibinitperiod},
-         given={Ole},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Samwald},
-         familyi={S\bibinitperiod},
-         given={Matthias},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OS+1}
-    \strng{fullhash}{OSHKLVHCEMMMMPRWOSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2023}
-    \field{labeldatesource}{}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \verb{doi}
-    \verb 10.1038/s41597-023-02433-3
-    \endverb
-    \field{issn}{2052-4463}
-    \field{number}{1}
-    \field{shorttitle}{{ThoughtSource}}
-    \field{title}{{ThoughtSource}: {A} central hub for large language model reasoning data}
-    \verb{url}
-    \verb https://www.nature.com/articles/s41597-023-02433-3
-    \endverb
-    \field{volume}{10}
-    \field{journaltitle}{Scientific Data}
-    \field{month}{08}
-    \field{year}{2023}
-    \field{urlday}{16}
-    \field{urlmonth}{05}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{xu_towards_2025}{misc}{}{}
-    \name{author}{20}{}{%
-      {{hash=XF}{%
-         family={Xu},
-         familyi={X\bibinitperiod},
-         given={Fengli},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=HQ}{%
-         family={Hao},
-         familyi={H\bibinitperiod},
-         given={Qianyue},
-         giveni={Q\bibinitperiod},
-      }}%
-      {{hash=ZZ}{%
-         family={Zong},
-         familyi={Z\bibinitperiod},
-         given={Zefang},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=WJ}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Jingwei},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=ZY}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Yunke},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=WJ}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Jingyi},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=LX}{%
-         family={Lan},
-         familyi={L\bibinitperiod},
-         given={Xiaochong},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=GJ}{%
-         family={Gong},
-         familyi={G\bibinitperiod},
-         given={Jiahui},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=OT}{%
-         family={Ouyang},
-         familyi={O\bibinitperiod},
-         given={Tianjian},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=MF}{%
-         family={Meng},
-         familyi={M\bibinitperiod},
-         given={Fanjin},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=SC}{%
-         family={Shao},
-         familyi={S\bibinitperiod},
-         given={Chenyang},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=YY}{%
-         family={Yan},
-         familyi={Y\bibinitperiod},
-         given={Yuwei},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=YQ}{%
-         family={Yang},
-         familyi={Y\bibinitperiod},
-         given={Qinglong},
-         giveni={Q\bibinitperiod},
-      }}%
-      {{hash=SY}{%
-         family={Song},
-         familyi={S\bibinitperiod},
-         given={Yiwen},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=RS}{%
-         family={Ren},
-         familyi={R\bibinitperiod},
-         given={Sijian},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HX}{%
-         family={Hu},
-         familyi={H\bibinitperiod},
-         given={Xinyuan},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=LY}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Yu},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=FJ}{%
-         family={Feng},
-         familyi={F\bibinitperiod},
-         given={Jie},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=GC}{%
-         family={Gao},
-         familyi={G\bibinitperiod},
-         given={Chen},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=LY}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Yong},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \strng{namehash}{XF+1}
-    \strng{fullhash}{XFHQZZWJZYWJLXGJOTMFSCYYYQSYRSHXLYFJGCLY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2025}
-    \field{labeldatesource}{}
-    \field{sortinit}{X}
-    \field{sortinithash}{X}
-    \verb{doi}
-    \verb 10.48550/arXiv.2501.09686
-    \endverb
-    \field{shorttitle}{Towards {Large} {Reasoning} {Models}}
-    \field{title}{Towards {Large} {Reasoning} {Models}: {A} {Survey} of {Reinforced} {Reasoning} with {Large} {Language} {Models}}
-    \verb{url}
-    \verb http://arxiv.org/abs/2501.09686
-    \endverb
-    \field{annotation}{%
-    Comment: 36 pages, 5 figures%
-    }
-    \field{month}{01}
-    \field{year}{2025}
-    \field{urlday}{16}
-    \field{urlmonth}{05}
-    \field{urlyear}{2025}
-  \endentry
-
-  \entry{zheng_minif2f_2022}{misc}{}{}
-    \name{author}{3}{}{%
-      {{hash=ZK}{%
-         family={Zheng},
-         familyi={Z\bibinitperiod},
-         given={Kunhao},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=HJM}{%
-         family={Han},
-         familyi={H\bibinitperiod},
-         given={Jesse\bibnamedelima Michael},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Polu},
-         familyi={P\bibinitperiod},
-         given={Stanislas},
+         given={Shenyu},
          giveni={S\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {arXiv}%
     }
-    \strng{namehash}{ZK+1}
-    \strng{fullhash}{ZKHJMPS1}
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
+    \field{labeltitlesource}{title}
     \field{labelyear}{2022}
     \field{labeldatesource}{}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
     \verb{doi}
-    \verb 10.48550/arXiv.2109.00110
+    \verb 10.48550/arXiv.2111.07443
     \endverb
-    \field{shorttitle}{{MiniF2F}}
-    \field{title}{{MiniF2F}: a cross-system benchmark for formal {Olympiad}-level mathematics}
+    \field{title}{Unified stability criteria for perturbed {LTV} systems with unstable instantaneous dynamics}
     \verb{url}
-    \verb http://arxiv.org/abs/2109.00110
+    \verb http://arxiv.org/abs/2111.07443
     \endverb
     \field{annotation}{%
-    Comment: Published as a conference paper at ICLR 2022%
+    Comment: Submitted to Automatica%
     }
     \field{month}{02}
     \field{year}{2022}
-    \field{urlday}{20}
+    \field{urlday}{12}
+    \field{urlmonth}{05}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{murdok_1_1999}{incollection}{}{}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={Murdok},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{2}{%
+      {Society for Industrial}%
+      {Applied Mathematics}%
+    }
+    \strng{namehash}{MJ1}
+    \strng{fullhash}{MJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Perturbations: {Theory} and {Methods}}
+    \verb{doi}
+    \verb 10.1137/1.9781611971095.ch1
+    \endverb
+    \field{isbn}{978-0-89871-443-2 978-1-61197-109-5}
+    \field{pages}{3\bibrangedash 81}
+    \field{title}{1. {Root} {Finding}}
+    \verb{url}
+    \verb http://epubs.siam.org/doi/10.1137/1.9781611971095.ch1
+    \endverb
+    \field{month}{01}
+    \field{year}{1999}
+    \field{urlday}{23}
     \field{urlmonth}{05}
     \field{urlyear}{2025}
   \endentry

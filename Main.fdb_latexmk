@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex Main"] 1749466278.57741 "Main.aux" "Main.bbl" "Main" 1749466280.44727 0
-  "./Main-blx.bib" 1749466280.16869 343 ccccbf9c4430907fec7803912554a3ba ""
-  "./ref.bib" 1748944884.76182 4308 4e5e0dad3f552d71600ee0c36a01998b ""
+["bibtex Main"] 1749468728.68448 "Main.aux" "Main.bbl" "Main" 1749468730.52439 0
+  "./Main-blx.bib" 1749468730.2438 343 ccccbf9c4430907fec7803912554a3ba ""
+  "./ref.bib" 1749468260.90683 1820 1b107d9861969eaaac01e0861394cf25 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1711143581 65510 b1f696b0241395385f422f67543c37fd ""
-  "Main.aux" 1749466280.16594 6599 9639d27785e4573578281a61907362ef "pdflatex"
+  "Main.aux" 1749468730.24092 6024 361f69ef4fd66ce4c8e10ebd6df6c124 "pdflatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1749466278.64969 "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" "Main.pdf" "Main" 1749466280.44741 0
-  "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" 1749466274.67253 17005 0ea9590a9352c1aadfc0f6500f3bfa91 ""
+["pdflatex"] 1749468728.75909 "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" "Main.pdf" "Main" 1749468730.52454 0
+  "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" 1749468726.62571 17478 cb857cb7bea6096e4f0654320be94018 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -295,14 +295,13 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1736431556 5465169 84f99b436d55b199b676d29fadb92a6c ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1736431701 3350769 5f68642da9918837a037d2632d4b6e2c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "ITR_LSR_slides.cls" 1748944997.6403 33165 87fa596e8e45e11d7ae8b2a0ec161fd3 ""
-  "Main.aux" 1749466280.16594 6599 9639d27785e4573578281a61907362ef "pdflatex"
-  "Main.bbl" 1749466278.64687 18616 b7be2e14110b0ea1f9c98904914baa13 "bibtex Main"
-  "Main.nav" 1749466280.16918 3031 d8697372fc725c3358ed8f53d9122e98 "pdflatex"
-  "Main.out" 1749466280.16659 1014 73207e2b716b22fe3444c9b8c71ba514 "pdflatex"
-  "Main.run.xml" 1749466280.16913 2554 9d81794aff8831d079217d6ac7f98649 "pdflatex"
-  "Main.tex" 1749466274.67253 17005 0ea9590a9352c1aadfc0f6500f3bfa91 ""
-  "logos/pdf_logo.pdf" 1748944884.75649 90528 1e8e082e60654049e88a95cdb3750656 ""
+  "ITR_LSR_slides.cls" 1749468429.62057 33373 2b6613a1e0a4fe982c98a954d7a50c17 ""
+  "Main.aux" 1749468730.24092 6024 361f69ef4fd66ce4c8e10ebd6df6c124 "pdflatex"
+  "Main.bbl" 1749468728.75628 5408 cd7a4ca679b2fd1baee98fa877150016 "bibtex Main"
+  "Main.nav" 1749468730.24428 2939 3b6a3c3f069a27e223e8f4742255a9ac "pdflatex"
+  "Main.out" 1749468730.24177 1014 73207e2b716b22fe3444c9b8c71ba514 "pdflatex"
+  "Main.run.xml" 1749468730.24424 2554 9d81794aff8831d079217d6ac7f98649 "pdflatex"
+  "Main.tex" 1749468726.62571 17478 cb857cb7bea6096e4f0654320be94018 ""
   "pics/ultimate_boundedness_rotated.pdf" 1749282251.78607 7482 5d936e76b23a43adf0c09cd32bd6e15c ""
   (generated)
   "Main-blx.bib"

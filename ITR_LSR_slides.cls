@@ -942,6 +942,12 @@
 %\newrobustcmd{\varcite}[2]{%
 %  \AtNextCite{\defcounter{maxnames}{#2}\defcounter{minnames}{#2}}\cite{#1}}
 
+% Add this to your class file
+\setbeamertemplate{bibliography item}[text]
+\renewcommand{\bibitem}[1]{%
+    \item[\raisebox{0pt}[0pt][0pt]{\includegraphics[height=1em]{reference-icon.pdf}}]%
+    \label{#1}%
+}
 
 %%%%%%%%%% sync page counter with frame counter
 %%%%%%%%%%      only useful in conjunction with:
