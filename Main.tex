@@ -53,35 +53,6 @@
 	pdfproducer={pdfTeX},
 }
 
-% \newtcolorbox{assumptionbox}[1]{
-% 	colback=blue!70!black, % Background color for the title part
-% 	colframe=blue!70!black, % Frame color (same as background for a solid bar)
-% 	coltext=white, % Text color for the title
-% 	fonttitle=\bfseries, % Font for the title
-% 	arc=3mm, % Rounded corners
-% 	outer arc=3mm, % Rounded outer corners
-% 	boxsep=2pt, % Space between the box content and the frame
-% 	left=10pt, right=10pt, top=5pt, bottom=5pt, % Padding around title
-% 	% Define the lower part with white background
-% 	after title={\par\nobreak\vskip 5pt%
-% 		\tcbset{
-% 			colback=white, % Background color for the content part
-% 			colframe=blue!70!black, % Frame color for the content part
-% 			coltext=black, % Text color for the content part
-% 			arc=3mm, % Rounded corners
-% 			outer arc=3mm, % Rounded outer corners
-% 			bottom=10pt, % Padding below content
-% 			top=10pt, % Padding above content
-% 			left=10pt, right=10pt, % Padding left and right
-% 			sharp corners=south, % Make bottom corners sharp if you want to emphasize separation, or keep rounded for full rounded box
-% 			rounded corners=southwest, rounded corners=southeast % Ensure only bottom corners are rounded
-% 			}
-% 		\begin{tcolorbox}
-% 	},
-% 	after upper={\end{tcolorbox}\nointerlineskip}, % Close the inner tcolorbox
-% 	title={\parbox{\dimexpr\linewidth-20pt\relax}{#1}} % Title content
-% }
-
 % Fix for potential BOM or invisible characters
 \begin{document}
 
@@ -103,9 +74,9 @@
 		\end{itemize}
 		\item \textbf{Uncertainty Omnipresent:}
 		\begin{itemize}
-			\item External disturbances (wind gusts, load variations) inherent
-			\item Internal uncertainties (sensor noise, actuator inaccuracies, unmodeled dynamics) ever-present
-			\item \textit{Ex:} Robot arm payload or joint friction varies
+			\item External disturbances (wind gusts, load variations)
+			\item Internal uncertainties (sensor noise, actuator inaccuracies, unmodeled dynamics)
+			\item \textit{Ex:} Robot arm payload
 		\end{itemize}
 		\item \textbf{Performance \& Robustness Demands:}
 		\begin{itemize}
@@ -118,9 +89,9 @@
 \begin{frame}
     \frametitle{Understanding Perturbation Types}
 
-    \textbf{Motivation:} Real-world systems exhibit time-dependence, modeling errors, external disturbances
+    % \textbf{Motivation:} Real-world systems exhibit time-dependence, modeling errors, external disturbances
 
-    \vspace{0.5cm}
+    % \vspace{0.5cm}
     \textbf{General System Form:}
     \[\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)\]
 
@@ -130,8 +101,8 @@
 		\begin{tcolorbox}[title=Vanishing Perturbation:]
 			% \textbf{Vanishing Perturbation:}
 			\begin{itemize}
-				\item $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$.
-				\item Preserves exponential stability.
+				\item $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$
+				\item Preserves exponential stability
 				\item Examples: modeling errors, unmodeled dynamics
 			\end{itemize}
 		\end{tcolorbox}
@@ -139,8 +110,8 @@
         \column{0.48\textwidth}
         \begin{tcolorbox}[title=Non-Vanishing Perturbation:]
 			\begin{itemize}
-				\item $g(\underline{x}, t) \not\to 0$ as $\underline{x} \to 0$.
-				\item Leads to ultimate boundedness.
+				\item $g(\underline{x}, t) \not\to 0$ as $\underline{x} \to 0$
+				\item Leads to ultimate boundedness
 				\item Examples: constant disturbances, sensor noise
 			\end{itemize}
 		\end{tcolorbox}
@@ -251,53 +222,108 @@
 
 \end{frame}
 
-\begin{frame}
-    \frametitle{Comparison Lemma – Example}
+% \begin{frame}
+%     \frametitle{Comparison Lemma - Example}
 
-	\vspace{-0.5cm}
-	\begin{tcolorbox}[title=Problem: Analyze stability of a scalar perturbed system]
-		\vspace{-0.4cm}
-		\begin{align*}
-			\dot{x} = -a\,x(t) + g(t, x), \quad x(0) = 0, \quad a > 0
-		\end{align*}
-	\end{tcolorbox}
+% 	\vspace{-0.5cm}
+% 	\begin{tcolorbox}[title=Problem: Analyze stability of a scalar perturbed system]
+% 		\vspace{-0.4cm}
+% 		\begin{align*}
+% 			\dot{\underline{x}} = -a\,\underline{x}(t) + g(t, \underline{x}), \quad \underline{x}(0) = 0, \quad a > 0
+% 		\end{align*}
+% 	\end{tcolorbox}
+
+%     \textbf{Assumptions/Conditions:}
+%     \begin{itemize}
+%         \item $\underline{x}(t) \geq 0 \quad \forall\, t \geq 0$
+%         \item $g(t, \underline{x}) \leq b\,\underline{x}(t) \quad \forall\, \underline{x} \geq 0$
+%     \end{itemize}
+% 	\vspace{0.3cm}
+% 	\textbf{Integral Condition:}
+% 	\begin{align*}
+% 	\underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \gamma(\tau)\, d\tau
+% 	= \underline{x}_0 + \int_{t_0}^{t} [-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)]\, d\tau
+% 	\end{align*}
+% 	\vspace{0.3cm}
+% 	\textbf{Bound for Derivative:}
+% 	\begin{align*}
+% 	\dot{\underline{x}}(t) \leq -a\,\underline{x}(t) + b\,\underline{x}(t) = -(a - b)\,\underline{x}(t)
+% 	\end{align*}
+% 	\end{frame}
+	
+% \begin{frame}
+% 	\frametitle{Comparison Lemma - Example}
+% 	\textbf{From the Bound for Derivative:}
+% 	\begin{align*}
+% 		\underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
+% 		\leq \underline{x}_0 - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
+% 	\end{align*}
+% 	\vspace{0.3cm}
+% 	\textbf{Note:} This applies if $(a-b)\underline{x}$ is continuous, positive definite, and non-decreasing
+% 	\vspace{-0.3cm}
+% 	\begin{tcolorbox}[title=Conclusion: Exponential Stability of the Perturbed System]
+% 		\vspace{-0.4cm}
+% 		\begin{align*}
+% 			\lim_{t \to \infty} \underline{x}(t) = 0 \\[0.3cm]
+% 			\underline{x}(t) \leq \underline{x}_0\, e^{-(a - b)(t-t_0)}
+% 		\end{align*}
+% 	\end{tcolorbox}
+% \end{frame}
+
+\begin{frame}
+    \frametitle{Comparison Lemma - Example}
+
+    \vspace{-0.5cm}
+    \begin{tcolorbox}[title=Problem: Analyze stability of a scalar perturbed system]
+        \vspace{-0.4cm}
+        \begin{align*}
+            \dot{\underline{x}} = -a\,\underline{x}(t) + g(t, \underline{x}), \quad \underline{x}(0) = \underline{x}_0, \quad a > 0
+        \end{align*}
+    \end{tcolorbox}
 
     \textbf{Assumptions/Conditions:}
     \begin{itemize}
-        \item $x(t) \geq 0 \quad \forall\, t \geq 0$.
-        \item $g(t, x) \leq b\,x(t) \quad \forall\, x \geq 0$.
+        \item $\underline{x}(t) \geq 0 \quad \forall\, t \geq 0$
+        \item $g(t, \underline{x}) \leq b\,\underline{x}(t) \quad \forall\, \underline{x} \geq 0$ and $0 \leq b < a$
     \end{itemize}
-	\vspace{0.3cm}
-	\textbf{Integral Condition:}
-	\begin{align*}
-	\underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \gamma(\tau)\, d\tau
-	= \underline{x}_0 + \int_{t_0}^{t} [-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)]\, d\tau
-	\end{align*}
-	\vspace{0.3cm}
-	\textbf{Bound for Derivative:}
-	\begin{align*}
-	\dot{\underline{x}}(t) \leq -a\,\underline{x}(t) + b\,\underline{x}(t) = -(a - b)\,\underline{x}(t)
-	\end{align*}
-	\end{frame}
-	
-\begin{frame}
-	\frametitle{Comparison Lemma – Example}
-	\textbf{From the Bound for Derivative:}
-	\begin{align*}
-		\underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
-		\leq \underline{x}_0 - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
-	\end{align*}
-	\vspace{0.3cm}
-	\textbf{Note:} This applies if $(a-b)x$ is continuous, positive definite, and non-decreasing.
-	\vspace{-0.3cm}
-	\begin{tcolorbox}[title=Conclusion: Exponential Stability of the Perturbed System]
-		\vspace{-0.4cm}
-		\begin{align*}
-			\lim_{t \to \infty} \underline{x}(t) = 0 \\[0.3cm]
-			\underline{x}(t) \leq \underline{x}_0\, e^{-(a - b)t}
-		\end{align*}
-	\end{tcolorbox}
+
+    \vspace{0.3cm}
+    \textbf{Step 1: Integral form of the solution}
+    \begin{align*}
+        \underline{x}(t) = \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
+    \end{align*}
+    \begin{align*}
+        \underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \left[-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)\right] d\tau = \underline{x}_0 - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
+    \end{align*}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Comparison Lemma - Example}
+
+    \textbf{Step 2: Define comparison function } $z(t)$:
+    \begin{align*}
+        z(t) = \underline{x}_0 - (a - b) \int_{t_0}^{t} z(\tau)\, d\tau
+    \end{align*}
+    \begin{align*}
+        \dot{z}(t) = -(a - b)\,z(t), \quad z(t_0) = \underline{x}_0
+    \end{align*}
+
+    \textbf{Solution:}
+    \begin{align*}
+        z(t) = \underline{x}_0\, e^{-(a - b)(t - t_0)}
+    \end{align*}
+
+    \vspace{-0.3cm}
+    \begin{tcolorbox}[title=Conclusion: Exponential Stability of the Perturbed System]
+        \vspace{-0.4cm}
+        \begin{align*}
+            \lim_{t \to \infty} \underline{x}(t) = 0 \\[0.3cm]
+            \underline{x}(t) \leq \underline{x}_0\, e^{-(a - b)(t - t_0)}
+        \end{align*}
+    \end{tcolorbox}
+\end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Non-Vanishing Perturbations}
@@ -332,8 +358,8 @@
 
     \textbf{Given:}
     \begin{itemize}
-        \item System $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$.
-        \item Nominal system origin $\underline{x}=0$ exponentially stable.
+        \item System $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
+        \item Nominal system origin $\underline{x}=0$ exponentially stable
     \end{itemize}
 	\vspace{0.3cm}
 	\textbf{Criteria (Assumptions \& Conditions):}
@@ -376,7 +402,7 @@
     \textbf{What it Means:}
     \begin{itemize}
         \item $\underline{x}(t_0)$ sufficiently close to origin $\Rightarrow$ system initially heads towards origin rapidly
-        \item Due to non-vanishing perturbation it will settle into ultimate around the origin
+        \item Due to non-vanishing perturbation it will settle into ball around origin
         \item $b$ depends directly on $\delta$ and how "stable" the system is ($c_1, c_2, c_3, c_4$)
     \end{itemize}
 
@@ -392,10 +418,10 @@
     \begin{tcolorbox}[title=Problem: Analyze Boundedness of a Perturbed Mass-Spring-Damper-System]
 		\vspace{-0.4cm}
         \begin{align*}
-            \dot{x}_1 &= x_2 \\ % Position
-            \dot{x}_2 &= -2x_1 - 3x_2 + d
+            \dot{\underline{x}}_1 &= x_2 \\ % Position
+            \dot{\underline{x}}_2 &= -2x_1 - 3x_2 + d
         \end{align*}
-        with bounded disturbance $|d| \leq \delta$ and the origin of the nominal system being exponentially stable.
+        with bounded disturbance $|d| \leq \delta$ and the origin of the nominal system being exponentially stable
     \end{tcolorbox}
 
     \vspace{0.3cm}
@@ -403,7 +429,7 @@
     \begin{itemize}
         \item $P > 0$ found by solving $A^T P + P A = -Q$
         \item For $Q=I$ and $A = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$, $P$ can be calculated
-        \item $c_1 \|\underline{x}\|^2 \leq V(\underline{x}) \leq c_2 \|\underline{x}\|^2$.
+        \item $c_1 \|\underline{x}\|^2 \leq V(\underline{x}) \leq c_2 \|\underline{x}\|^2$
     \end{itemize}
 
 \end{frame}
@@ -429,7 +455,7 @@
                   \[ \|\underline{x}(t)\| \leq b \quad \forall\, t \geq t_0 + T \]
             \item The ultimate bound $b$ and other parameters are:
                   \[ b = \frac{c_4}{c_3} k \frac{\delta}{\theta}, \quad k = \sqrt{c_2/c_1}, \quad \gamma = \frac{(1 - \theta)c_3}{2c_2} \]
-            \item Size of the ultimate bound $b$ directly \textbf{scales with the disturbance magnitude $\delta$}.
+            \item Size of the ultimate bound $b$ directly \textbf{scales with the disturbance magnitude $\delta$}
         \end{itemize}
     \end{tcolorbox}
 \end{frame}
