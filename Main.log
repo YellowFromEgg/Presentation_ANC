@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  13 JUN 2025 10:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  13 JUN 2025 14:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1324,7 +1324,7 @@ Overfull \vbox (16.33623pt too high) detected at line 408
 [11
 
 ]
-Overfull \vbox (14.54pt too high) detected at line 431
+Overfull \vbox (7.3638pt too high) detected at line 432
  []
 
 
@@ -1332,7 +1332,7 @@ Overfull \vbox (14.54pt too high) detected at line 431
 [12
 
 ]
-Overfull \vbox (31.24043pt too high) detected at line 457
+Overfull \vbox (30.6321pt too high) detected at line 458
  []
 
 
@@ -1340,7 +1340,7 @@ Overfull \vbox (31.24043pt too high) detected at line 457
 [13
 
 ]
-Overfull \vbox (6.4406pt too high) detected at line 482
+Overfull \vbox (6.4406pt too high) detected at line 483
  []
 
 
@@ -1350,19 +1350,19 @@ Overfull \vbox (6.4406pt too high) detected at line 482
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 489.
+(hyperref)                removing `\translate ' on input line 490.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 494.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 494.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 495.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 495.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <6> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 494.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 495.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 494.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 495.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1399,7 +1399,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  142i,18n,137p,2003b,1584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Main.pdf (15 pages, 306964 bytes).
+Output written on Main.pdf (15 pages, 306707 bytes).
 PDF statistics:
  755 PDF objects out of 1000 (max. 8388607)
  438 compressed objects within 5 object streams

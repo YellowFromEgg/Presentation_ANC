@@ -148,7 +148,7 @@
 	\textbf{Assumptions:}
 	\begin{itemize}
 		\item Origin $\underline{x}=0$ is an equilibrium point
-		\item Lyapunov function $V(t,\underline{x})$ is continuously differentialbe, positive definite and radially unbounded
+		\item Lyapunov function $V(t,\underline{x})$ is continuously differentiable, positive definite and radially unbounded
 		\item Derivative of Lyapunov function is negative definite
 	\end{itemize}
 	\vspace{0.2cm}
@@ -211,7 +211,7 @@
     \textbf{Assumptions for Exponential Stability:}
     \begin{itemize}
         \item Perturbation $g(\underline{x}, t)$ vanishes (i.e., $g(\underline{x}, t) \to 0$ as $\underline{x} \to 0$)
-        \item $V(t,\underline{x})$: continuously differentialbe, positive definite, radially unbounded
+        \item $V(t,\underline{x})$: continuously differentiable, positive definite, radially unbounded
     \end{itemize}
     \vspace{0.3cm} % Reduced vertical space
     \textbf{Condition for Global Uniform Exponential Stability:}
@@ -290,7 +290,7 @@
     \vspace{0.3cm}
     \textbf{Step 1: Integral form of the solution}
     \begin{align*}
-        \underline{x}(t) = \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
+        \underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
     \end{align*}
     \begin{align*}
         \underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \left[-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)\right] d\tau = \underline{x}_0 - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
@@ -424,8 +424,9 @@
     \textbf{Lyapunov Candidate Function:} $V(\underline{x}) = \underline{x}^T P \underline{x}$
     \begin{itemize}
         \item $P > 0$ found by solving $A^T P + P A = -Q$
-        \item For $Q=I$ and $A = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$, $P$ can be calculated
-        \item $c_1 \|\underline{x}\|^2 \leq V(\underline{x}) \leq c_2 \|\underline{x}\|^2$
+        \vspace{0.2cm}
+        \item For $Q=I$ and $A = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$
+        % \item $c_1 \|\underline{x}\|^2 \leq V(\underline{x}) \leq c_2 \|\underline{x}\|^2$
     \end{itemize}
 
 \end{frame}
@@ -450,7 +451,7 @@
             \item System state $\|\underline{x}(t)\|$ eventually converges to and remains within a bounded region:
                   \[ \|\underline{x}(t)\| \leq b \quad \forall\, t \geq t_0 + T \]
             \item The ultimate bound $b$ and other parameters are:
-                  \[ b = \frac{c_4}{c_3} k \frac{\delta}{\theta}, \quad k = \sqrt{c_2/c_1}, \quad \gamma = \frac{(1 - \theta)c_3}{2c_2} \]
+                  \[ b = \frac{c_4}{c_3} k \frac{\delta}{\theta}, \quad k = \sqrt{c_2/c_1} \]
             \item Size of the ultimate bound $b$ directly \textbf{scales with the disturbance magnitude $\delta$}
         \end{itemize}
     \end{tcolorbox}
