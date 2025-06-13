@@ -327,83 +327,78 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Non-Vanishing Perturbations}
-\subsection*{Ultimate Boundedness} % Sub-section for navigation
 
 \begin{frame}
     \frametitle{Non-Vanishing Perturbations: The Problem}
-	\textbf{The Challenge:}
+
+    \textbf{Challenge:}
     \begin{itemize}
-        \item Perturbation doesn't disappear, perfect asymptotic stability to zero is not possible
-        \item State $\underline{x}$ will perpetually move away from the origin
+        \item Perturbation does not vanish $\Rightarrow$ exact convergence to zero is impossible
+        \item State $\underline{x}(t)$ will always be pushed away from origin
     \end{itemize}
 
     \vspace{0.3cm}
-    \textbf{Conclusion/Goal: Ultimate Boundedness}
+    \textbf{Goal: Ultimate Boundedness}
     \begin{itemize}
-        \item We aim for Ultimate Boundedness
-        \item Not exactly zero, but "close enough" for practical purposes
+        \item We seek boundedness around origin
+        \item “Good enough” stability for real-world systems
     \end{itemize}
 
-	\vspace{0.3cm}
-    \textbf{Intuition:}
+    \vspace{0.3cm}
+    \textbf{Analogy:}
     \begin{itemize}
-        \item Imagine balencing a pencil on its tip in a sufficiently strong wind
-        \item It won't stay perfectly still
-        \item Find out how big that wobble area is $\Rightarrow$ guarantee the pencil always stays inside
+        \item Like balancing a pencil in wind as it won’t stay still
+        \item We can bound how far it wobbles
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Lyapunov Conditions for Ultimate Boundedness}
 
-    \textbf{Given:}
+    \textbf{System:} $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
     \begin{itemize}
-        \item System $\dot{\underline{x}} = f(\underline{x}) + g(\underline{x}, t)$
-        \item Nominal system origin $\underline{x}=0$ exponentially stable
+        \item Origin is exponentially stable for nominal system ($g \equiv 0$)
     \end{itemize}
-	\vspace{0.3cm}
-	\textbf{Criteria (Assumptions \& Conditions):}
-    \begin{itemize}
-        \item \textbf{Lyapunov Function:} Cont. diff., pdf, radially unbounded
-            %   \[c_1\|\underline{x}\|^2 \leq V(t,\underline{x}) \leq c_2\|\underline{x}\|^2\]
-			%   \textit{Dummies: $V$ is like energy; positive means it's big away from origin, zero at origin.}
-        \item \textbf{Nominal Decay Condition:} Derivative of $V$ along nominal system is ndf
-            %   \[\frac{\partial V}{\partial t}+\frac{\partial V}{\partial \underline{x}}f(\underline{x}) \leq -c_3\|\underline{x}\|^2 \]
-            %   \textit{Dummies: Nominal system's "energy" always decreases, pulling state towards origin.}
-        \item \textbf{Lyapunov Function Gradient Bound:} Gradient of $V$ is bounded
-            %   \[\left\|\frac{\partial V}{\partial \underline{x}}\right\| \leq c_4\|\underline{x}\|\]
-            %   \textit{Dummies: How fast "energy" changes w.r.t. position; not too steep.}
-        \item \textbf{Perturbation Bound:} Non-vanishing $g(\underline{x}, t)$ is bounded by a constant $\delta$
-            %   \[\|g(\underline{x}, t)\| \leq \delta \]
-            %   \textit{Dummies: External disturbance is noisy but has a finite maximum strength $\delta$.}
-    \end{itemize}
-	\vspace{0.3cm}
-    \textbf{The Key Trade-off:} $\delta$ directly impacts size of ultimate bound
-    \begin{align*}
-		\|g(\underline{x}, t)\| \leq \delta < \frac{c_3}{c_4} \sqrt{\frac{c_1}{c_2}}\, \theta r, \quad \theta \in (0,1),\ r > 0
-	\end{align*}
 
+    \vspace{0.3cm}
+    \textbf{Lyapunov Function Conditions:}
+    \begin{itemize}
+        \item $V(\underline{x})$ positive definite, radially unbounded, continuously differentiable
+        % \item \textit{Dummies: $V$ is like energy; positive means it's big away from origin, zero at origin.}
+        \item $\dot{V} \leq -c_3\|\underline{x}\|^2$ for nominal dynamics
+        % \item \textit{Dummies: How fast "energy" changes w.r.t. position; not too steep.}
+        \item $\left\|\frac{\partial V}{\partial \underline{x}}\right\| \leq c_4\|\underline{x}\|$
+    \end{itemize}
+
+    \vspace{0.3cm}
+    % \textit{Dummies: External disturbance is noisy but has a finite maximum strength $\delta$.}
+    \textbf{Key Trade-off:}
+    \[
+        \|g(\underline{x}, t)\| \leq\delta < \frac{c_3}{c_4} \sqrt{\frac{c_1}{c_2}}\, \theta r, \quad \theta \in (0,1)
+    \]
 \end{frame}
 
 \begin{frame}
     \frametitle{Result: Initial Decay and Ultimate Boundedness}
-	\vspace{-0.5cm}
-	\begin{tcolorbox}[title=Outcome for any initial condition $\|\underline{x}(t_0)\| \leq \sqrt{c_1/c_2} \, r$]
-		\textbf{Phase 1: Initial Exponential Decay}
-		\begin{align*}
-			\underline{x}(t)\| \leq k\, e^{-\gamma (t - t_0)} \|\underline{x}(t_0)\|, \quad t_0 \leq t \leq t_0 + T
-		\end{align*}
-		\textbf{Phase 2: Ultimate Boundedness}
-		\begin{align*}
-			\underline{x}(t)\| \leq b \quad \forall\, t \geq t_0 + T
-		\end{align*}
-	\end{tcolorbox}
-    \vspace{0.3cm}
-    \textbf{What it Means:}
+
+    \vspace{-0.4cm}
+    \begin{tcolorbox}[title=For $\|\underline{x}(t_0)\| \leq \sqrt{c_1/c_2} \, r$]
+        \textbf{Phase 1: Initial Exponential Decay} \quad ($t_0 \leq t \leq t_0 + T$)
+        \begin{align*}
+            \|\underline{x}(t)\| \leq k\, e^{-\gamma (t - t_0)} \|\underline{x}(t_0)\|
+        \end{align*}
+        \textbf{Phase 2: Ultimate Bound} \quad ($t \geq t_0 + T$)
+        \begin{align*}
+            \|\underline{x}(t)\| \leq b
+        \end{align*}
+    \end{tcolorbox}
+
+    \vspace{0.2cm}
+    \textbf{Interpretation:}
     \begin{itemize}
-        \item $\underline{x}(t_0)$ sufficiently close to origin $\Rightarrow$ system initially heads towards origin rapidly
-        \item Due to non-vanishing perturbation it will settle into ball around origin
-        \item $b$ depends directly on $\delta$ and how "stable" the system is ($c_1, c_2, c_3, c_4$)
+        \item System initially decays toward origin
+        \item Perturbation prevents full convergence
+        \item Final “wobble size” $b$ depends on $\delta$, $c_1$ – $c_4$
     \end{itemize}
 
     % \vspace{0.3cm}
@@ -411,6 +406,7 @@
     % \[ k = \sqrt{\frac{c_2}{c_1}}, \quad \gamma = \frac{(1 - \theta)c_3}{2c_2}, \quad b = \frac{c_4}{c_3}k \frac{\delta}{\theta} \]
     % \textit{Dummies: These are like calibration numbers telling us how fast it decays ($k, \gamma$) and how big the final wobble will be ($b$).}
 \end{frame}
+
 
 \begin{frame}
     \frametitle{Example: Bounded Disturbance Response}
