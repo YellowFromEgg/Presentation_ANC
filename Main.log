@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  13 JUN 2025 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  14 JUN 2025 10:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1292,7 +1292,7 @@ Overfull \vbox (7.824pt too high) detected at line 223
 [6
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-Overfull \vbox (18.19896pt too high) detected at line 298
+Overfull \vbox (10.31073pt too high) detected at line 360
  []
 
 
@@ -1300,10 +1300,6 @@ Overfull \vbox (18.19896pt too high) detected at line 298
 [7
 
 ]
-Overfull \vbox (31.01869pt too high) detected at line 324
- []
-
-
 
 [8
 
@@ -1316,7 +1312,7 @@ Overfull \vbox (31.01869pt too high) detected at line 324
 [10
 
 ]
-Overfull \vbox (16.33623pt too high) detected at line 408
+Overfull \vbox (16.33623pt too high) detected at line 473
  []
 
 
@@ -1324,7 +1320,7 @@ Overfull \vbox (16.33623pt too high) detected at line 408
 [11
 
 ]
-Overfull \vbox (7.3638pt too high) detected at line 432
+Overfull \vbox (7.3638pt too high) detected at line 497
  []
 
 
@@ -1332,7 +1328,7 @@ Overfull \vbox (7.3638pt too high) detected at line 432
 [12
 
 ]
-Overfull \vbox (30.6321pt too high) detected at line 458
+Overfull \vbox (30.6321pt too high) detected at line 523
  []
 
 
@@ -1340,7 +1336,7 @@ Overfull \vbox (30.6321pt too high) detected at line 458
 [13
 
 ]
-Overfull \vbox (6.4406pt too high) detected at line 483
+Overfull \vbox (6.4406pt too high) detected at line 548
  []
 
 
@@ -1350,19 +1346,19 @@ Overfull \vbox (6.4406pt too high) detected at line 483
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 490.
+(hyperref)                removing `\translate ' on input line 555.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 495.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 495.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 560.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 560.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <6> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 495.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 560.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 495.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 560.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1399,7 +1395,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  142i,18n,137p,2003b,1584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Main.pdf (15 pages, 306707 bytes).
+Output written on Main.pdf (15 pages, 306096 bytes).
 PDF statistics:
  755 PDF objects out of 1000 (max. 8388607)
  438 compressed objects within 5 object streams

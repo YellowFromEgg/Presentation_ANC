@@ -270,6 +270,59 @@
 % 	\end{tcolorbox}
 % \end{frame}
 
+% \begin{frame}
+%     \frametitle{Comparison Lemma - Example}
+
+%     \vspace{-0.5cm}
+%     \begin{tcolorbox}[title=Problem: Analyze stability of a scalar perturbed system]
+%         \vspace{-0.4cm}
+%         \begin{align*}
+%             \dot{\underline{x}} = -a\,\underline{x}(t) + g(t, \underline{x}), \quad \underline{x}(0) = \underline{x}_0, \quad a > 0
+%         \end{align*}
+%     \end{tcolorbox}
+
+%     \textbf{Assumptions/Conditions:}
+%     \begin{itemize}
+%         \item $\underline{x}(t) \geq 0 \quad \forall\, t \geq 0$
+%         \item $g(t, \underline{x}) \leq b\,\underline{x}(t) \quad \forall\, \underline{x} \geq 0$ and $0 \leq b < a$
+%     \end{itemize}
+
+%     \vspace{0.3cm}
+%     \textbf{Step 1: Integral form of the solution}
+%     \begin{align*}
+%         \underline{x}(t) = \underline{x}(t_0) + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
+%     \end{align*}
+%     \begin{align*}
+%         \underline{x}(t) \leq \underline{x}(t_0) + \int_{t_0}^{t} \left[-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)\right] d\tau = \underline{x}(t_0) - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
+%     \end{align*}
+% \end{frame}
+
+% \begin{frame}
+%     \frametitle{Comparison Lemma - Example}
+
+%     \textbf{Step 2: Define comparison function } $z(t)$:
+%     \begin{align*}
+%         z(t) = \underline{x}(t_0) - (a - b) \int_{t_0}^{t} z(\tau)\, d\tau
+%     \end{align*}
+%     \begin{align*}
+%         \dot{z}(t) = -(a - b)\,z(t), \quad z(t_0) = \underline{x}(t_0)
+%     \end{align*}
+
+%     \textbf{Solution:}
+%     \begin{align*}
+%         z(t) = \underline{x}(t_0)\, e^{-(a - b)(t - t_0)}
+%     \end{align*}
+
+%     \vspace{-0.3cm}
+%     \begin{tcolorbox}[title=Conclusion: Exponential Stability of the Perturbed System]
+%         \vspace{-0.4cm}
+%         \begin{align*}
+%             \lim_{t \to \infty} \underline{x}(t) = 0 \\[0.3cm]
+%             \underline{x}(t) \leq \underline{x}(t_0)\, e^{-(a - b)(t - t_0)}
+%         \end{align*}
+%     \end{tcolorbox}
+% \end{frame}
+
 \begin{frame}
     \frametitle{Comparison Lemma - Example}
 
@@ -277,53 +330,65 @@
     \begin{tcolorbox}[title=Problem: Analyze stability of a scalar perturbed system]
         \vspace{-0.4cm}
         \begin{align*}
-            \dot{\underline{x}} = -a\,\underline{x}(t) + g(t, \underline{x}), \quad \underline{x}(0) = \underline{x}_0, \quad a > 0
+            \dot{x}(t) = -a\,x(t) + g(t, x), \quad x(t_0) = x_0, \quad a > 0
         \end{align*}
     \end{tcolorbox}
 
     \textbf{Assumptions/Conditions:}
     \begin{itemize}
-        \item $\underline{x}(t) \geq 0 \quad \forall\, t \geq 0$
-        \item $g(t, \underline{x}) \leq b\,\underline{x}(t) \quad \forall\, \underline{x} \geq 0$ and $0 \leq b < a$
+        \item $x(t) \geq 0$ for all $t \geq t_0$
+        \item $g(t, x)$ is bounded: $g(t, x) \leq b\,x(t) \quad \forall\, x \geq 0$ and $0 \leq b < a$.
     \end{itemize}
 
     \vspace{0.3cm}
-    \textbf{Step 1: Integral form of the solution}
-    \begin{align*}
-        \underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \dot{\underline{x}}(\tau)\, d\tau
-    \end{align*}
-    \begin{align*}
-        \underline{x}(t) \leq \underline{x}_0 + \int_{t_0}^{t} \left[-a\,\underline{x}(\tau) + b\,\underline{x}(\tau)\right] d\tau = \underline{x}_0 - (a - b) \int_{t_0}^{t} \underline{x}(\tau)\, d\tau
-    \end{align*}
+    \begin{columns}
+        \column{0.48\textwidth}
+        \textbf{Step 1: Formulate the comparison inequality}
+        \begin{align*}
+            \dot{x}(t) &\leq -a\,x(t) + b\,x(t) \\[0.3cm]
+            \dot{x}(t) &\leq -(a - b)\,x(t)
+        \end{align*}
+
+        \column{0.48\textwidth}
+        \textbf{Step 2: Define a comparison system} \\
+        \begin{align*}
+            \dot{z}(t) &= -(a - b)\,z(t) \\[0.3cm]
+            z(t_0) &= x(t_0)
+        \end{align*}
+    \end{columns}
+    
 \end{frame}
 
 \begin{frame}
     \frametitle{Comparison Lemma - Example}
+    \begin{columns}
+        \column{0.48\textwidth}
+        \textbf{Step 3: Solve the comparison system} \\
+        \begin{align*}
+            z(t) = x(t_0)\, e^{-(a - b)(t - t_0)}
+        \end{align*}
 
-    \textbf{Step 2: Define comparison function } $z(t)$:
-    \begin{align*}
-        z(t) = \underline{x}_0 - (a - b) \int_{t_0}^{t} z(\tau)\, d\tau
-    \end{align*}
-    \begin{align*}
-        \dot{z}(t) = -(a - b)\,z(t), \quad z(t_0) = \underline{x}_0
-    \end{align*}
+        \column{0.48\textwidth}
+        \textbf{Step 4: Apply the Comparison Lemma}
+        % Since $\dot{x}(t) \leq -(a - b)\,x(t)$ and $\dot{z}(t) = -(a - b)\,z(t)$, with $x(t_0) = z(t_0)$, the Comparison Lemma states that:
+        \begin{align*}
+            x(t) \leq z(t) \quad \forall\, t \geq t_0
+        \end{align*}
+    \end{columns}
 
-    \textbf{Solution:}
-    \begin{align*}
-        z(t) = \underline{x}_0\, e^{-(a - b)(t - t_0)}
-    \end{align*}
-
-    \vspace{-0.3cm}
+    \vspace{0.3cm}
     \begin{tcolorbox}[title=Conclusion: Exponential Stability of the Perturbed System]
         \vspace{-0.4cm}
+        % Given our assumption that $0 \leq b < a$, it follows that $(a - b) > 0$.
+        % Therefore, the exponent $-(a - b)(t - t_0)$ is negative and decreases linearly with $t$.
         \begin{align*}
-            \lim_{t \to \infty} \underline{x}(t) = 0 \\[0.3cm]
-            \underline{x}(t) \leq \underline{x}_0\, e^{-(a - b)(t - t_0)}
+            \lim_{t \to \infty} e^{-(a - b)(t - t_0)} = \lim_{t \to \infty} x(t) = 0
+        \end{align*}
+        \begin{align*}
+            x(t) \leq x(t_0)\, e^{-(a - b)(t - t_0)}
         \end{align*}
     \end{tcolorbox}
 \end{frame}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Non-Vanishing Perturbations}
@@ -425,7 +490,7 @@
     \begin{itemize}
         \item $P > 0$ found by solving $A^T P + P A = -Q$
         \vspace{0.2cm}
-        \item For $Q=I$ and $A = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$
+        \item For $Q>0$ and $A = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$
         % \item $c_1 \|\underline{x}\|^2 \leq V(\underline{x}) \leq c_2 \|\underline{x}\|^2$
     \end{itemize}
 
