@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  15 JUN 2025 08:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  15 JUN 2025 09:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1100,30 +1100,30 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 )
 \@quotelevel=\count506
 \@quotereset=\count507
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 61.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 62.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1178,7 +1178,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 61.
+Package hyperref Info: Link coloring OFF on input line 62.
  (./Main.out) (./Main.out)
 \@outlinefile=\write6
 \openout6 = `Main.out'.
@@ -1212,49 +1212,49 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' found.
  (./Main.bbl)
-Package biblatex Info: Reference section=0 on input line 61.
-Package biblatex Info: Reference segment=0 on input line 61.
+Package biblatex Info: Reference section=0 on input line 62.
+Package biblatex Info: Reference segment=0 on input line 62.
  (./Main.nav)
 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 91.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 92.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 91.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 92.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 91.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 92.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 91.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 92.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 91.
+(Font)              <6> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 91.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+(Font)              <5> on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 91.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 91.
+(Font)              <10.95> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 91.
+(Font)              <8> on input line 92.
 
-Overfull \vbox (6.07834pt too high) detected at line 91
+Overfull \vbox (6.07834pt too high) detected at line 92
  []
 
 
@@ -1273,10 +1273,10 @@ Overfull \vbox (6.07834pt too high) detected at line 91
 <pics/ultimate_boundedness_rotated.pdf, id=252, 860.01299pt x 229.6872pt>
 File: pics/ultimate_boundedness_rotated.pdf Graphic file (type pdf)
 <use pics/ultimate_boundedness_rotated.pdf>
-Package pdftex.def Info: pics/ultimate_boundedness_rotated.pdf  used on input line 201.
+Package pdftex.def Info: pics/ultimate_boundedness_rotated.pdf  used on input line 202.
 (pdftex.def)             Requested size: 398.3386pt x 106.38637pt.
 
-Overfull \vbox (5.61699pt too high) detected at line 201
+Overfull \vbox (5.61699pt too high) detected at line 202
  []
 
 
@@ -1284,7 +1284,7 @@ Overfull \vbox (5.61699pt too high) detected at line 201
 [5
 
  <./pics/ultimate_boundedness_rotated.pdf>]
-Overfull \vbox (7.824pt too high) detected at line 227
+Overfull \vbox (7.824pt too high) detected at line 228
  []
 
 
@@ -1292,7 +1292,7 @@ Overfull \vbox (7.824pt too high) detected at line 227
 [6
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-Overfull \vbox (10.31073pt too high) detected at line 364
+Overfull \vbox (10.31073pt too high) detected at line 365
  []
 
 
@@ -1312,7 +1312,7 @@ Overfull \vbox (10.31073pt too high) detected at line 364
 [10
 
 ]
-Overfull \vbox (16.33623pt too high) detected at line 477
+Overfull \vbox (16.33623pt too high) detected at line 478
  []
 
 
@@ -1320,7 +1320,7 @@ Overfull \vbox (16.33623pt too high) detected at line 477
 [11
 
 ]
-Overfull \vbox (7.3638pt too high) detected at line 501
+Overfull \vbox (7.3638pt too high) detected at line 502
  []
 
 
@@ -1328,7 +1328,7 @@ Overfull \vbox (7.3638pt too high) detected at line 501
 [12
 
 ]
-Overfull \vbox (30.6321pt too high) detected at line 527
+Overfull \vbox (30.6321pt too high) detected at line 528
  []
 
 
@@ -1336,7 +1336,7 @@ Overfull \vbox (30.6321pt too high) detected at line 527
 [13
 
 ]
-Overfull \vbox (6.4406pt too high) detected at line 552
+Overfull \vbox (6.4406pt too high) detected at line 553
  []
 
 
@@ -1345,16 +1345,16 @@ Overfull \vbox (6.4406pt too high) detected at line 552
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 564.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 564.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 565.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 565.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <6> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 564.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 565.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 564.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 565.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1401,13 +1401,13 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 Here is how much of TeX's memory you used:
  38122 strings out of 473218
  778983 string characters out of 5716975
- 1568292 words of memory out of 5000000
+ 1568284 words of memory out of 5000000
  60620 multiletter control sequences out of 15000+600000
  615690 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  142i,18n,137p,2003b,1569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Main.pdf (19 pages, 314345 bytes).
+Output written on Main.pdf (19 pages, 314346 bytes).
 PDF statistics:
  826 PDF objects out of 1000 (max. 8388607)
  481 compressed objects within 5 object streams
