@@ -304,17 +304,17 @@
 % \begin{frame}
 %     \frametitle{Comparison Lemma - Example}
 
-%     \textbf{Step 2: Define comparison function } $z(t)$:
+%     \textbf{Step 2: Define comparison function } $\underline{z}(t)$:
 %     \begin{align*}
-%         z(t) = \underline{x}(t_0) - (a - b) \int_{t_0}^{t} z(\tau)\, d\tau
+%         \underline{z}(t) = \underline{x}(t_0) - (a - b) \int_{t_0}^{t} \underline{z}(\tau)\, d\tau
 %     \end{align*}
 %     \begin{align*}
-%         \dot{z}(t) = -(a - b)\,z(t), \quad z(t_0) = \underline{x}(t_0)
+%         \dot{\underline{z}}(t) = -(a - b)\,\underline{z}(t), \quad \underline{z}(t_0) = \underline{x}(t_0)
 %     \end{align*}
 
 %     \textbf{Solution:}
 %     \begin{align*}
-%         z(t) = \underline{x}(t_0)\, e^{-(a - b)(t - t_0)}
+%         \underline{z}(t) = \underline{x}(t_0)\, e^{-(a - b)(t - t_0)}
 %     \end{align*}
 
 %     \vspace{-0.3cm}
@@ -334,14 +334,14 @@
     \begin{tcolorbox}[title=Problem: Analyze stability of a scalar perturbed system]
         \vspace{-0.4cm}
         \begin{align*}
-            \dot{x}(t) = -a\,x(t) + g(t, x), \quad x(t_0) = x_0, \quad a > 0
+            \dot{\underline{x}}(t) = -a\,\underline{x}(t) + g(t, \underline{x}), \quad \underline{x}(t_0) = \underline{x}_0, \quad a > 0
         \end{align*}
     \end{tcolorbox}
 
     \textbf{Assumptions/Conditions:}
     \begin{itemize}
-        \item $x(t) \geq 0$ for all $t \geq t_0$
-        \item $g(t, x)$ is bounded: $g(t, x) \leq b\,x(t) \quad \forall\, x \geq 0$ and $0 \leq b < a$.
+        \item $\underline{x}(t) \geq 0$ for all $t \geq t_0$
+        \item $g(t, \underline{x})$ is bounded: $g(t, \underline{x}) \leq b\,\underline{x}(t) \quad \forall\, \underline{x} \geq 0$ and $0 \leq b < a$.
     \end{itemize}
 
     \vspace{0.3cm}
@@ -349,15 +349,15 @@
         \column{0.48\textwidth}
         \textbf{Step 1: Formulate the comparison inequality}
         \begin{align*}
-            \dot{x}(t) &\leq -a\,x(t) + b\,x(t) \\[0.3cm]
-            \dot{x}(t) &\leq -(a - b)\,x(t)
+            \dot{\underline{x}}(t) &\leq -a\,\underline{x}(t) + b\,\underline{x}(t) \\[0.3cm]
+            \dot{\underline{x}}(t) &\leq -(a - b)\,\underline{x}(t)
         \end{align*}
 
         \column{0.48\textwidth}
         \textbf{Step 2: Define a comparison system} \\
         \begin{align*}
-            \dot{z}(t) &= -(a - b)\,z(t) \\[0.3cm]
-            z(t_0) &= x(t_0)
+            \dot{\underline{z}}(t) &= -(a - b)\,\underline{z}(t) \\[0.3cm]
+            \underline{z}(t_0) &= \underline{x}(t_0)
         \end{align*}
     \end{columns}
     
@@ -369,14 +369,14 @@
         \column{0.48\textwidth}
         \textbf{Step 3: Solve the comparison system} \\
         \begin{align*}
-            z(t) = x(t_0)\, e^{-(a - b)(t - t_0)}
+            \underline{z}(t) = \underline{x}(t_0)\, e^{-(a - b)(t - t_0)}
         \end{align*}
 
         \column{0.48\textwidth}
-        \textbf{Step 4: Apply the Comparison Lemma}
-        % Since $\dot{x}(t) \leq -(a - b)\,x(t)$ and $\dot{z}(t) = -(a - b)\,z(t)$, with $x(t_0) = z(t_0)$, the Comparison Lemma states that:
+        \textbf{Step 4: Apply the Comparison Lemma (Grönwall Inequality)}
+        % Since $\dot{\underline{x}}(t) \leq -(a - b)\,\underline{x}(t)$ and $\dot{\underline{z}}(t) = -(a - b)\,\underline{z}(t)$, with $\underline{x}(t_0) = \underline{z}(t_0)$, the Comparison Lemma states that:
         \begin{align*}
-            x(t) \leq z(t) \quad \forall\, t \geq t_0
+            \underline{x}(t) \leq \underline{z}(t) \quad \forall\, t \geq t_0
         \end{align*}
     \end{columns}
 
@@ -386,10 +386,10 @@
         % Given our assumption that $0 \leq b < a$, it follows that $(a - b) > 0$.
         % Therefore, the exponent $-(a - b)(t - t_0)$ is negative and decreases linearly with $t$.
         \begin{align*}
-            \lim_{t \to \infty} e^{-(a - b)(t - t_0)} = \lim_{t \to \infty} x(t) = 0
+            \lim_{t \to \infty} e^{-(a - b)(t - t_0)} = \lim_{t \to \infty} \underline{x}(t) = 0
         \end{align*}
         \begin{align*}
-            x(t) \leq x(t_0)\, e^{-(a - b)(t - t_0)}
+            \underline{x}(t) \leq \underline{x}(t_0)\, e^{-(a - b)(t - t_0)}
         \end{align*}
     \end{tcolorbox}
 \end{frame}
@@ -483,8 +483,8 @@
     \begin{tcolorbox}[title=Problem: Analyze Boundedness of a Perturbed Mass-Spring-Damper-System]
 		\vspace{-0.4cm}
         \begin{align*}
-            \dot{\underline{x}}_1 &= x_2 \\ % Position
-            \dot{\underline{x}}_2 &= -2x_1 - 3x_2 + d
+            \dot{x}_1 &= x_2 \\ % Position
+            \dot{x}_2 &= -2x_1 - 3x_2 + d
         \end{align*}
         with bounded disturbance $|d| \leq \delta$ and the origin of the nominal system being exponentially stable
     \end{tcolorbox}
