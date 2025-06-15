@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex Main"] 1749890671.35741 "Main.aux" "Main.bbl" "Main" 1749968824.64228 0
-  "./Main-blx.bib" 1749968824.35554 343 ccccbf9c4430907fec7803912554a3ba ""
+["bibtex Main"] 1749970141.80942 "Main.aux" "Main.bbl" "Main" 1749970297.49962 0
+  "./Main-blx.bib" 1749970297.20982 343 ccccbf9c4430907fec7803912554a3ba ""
   "./ref.bib" 1749468260.90683 1820 1b107d9861969eaaac01e0861394cf25 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1711143581 65510 b1f696b0241395385f422f67543c37fd ""
-  "Main.aux" 1749968824.35288 6604 afae0b7c3edfd623a9e896be35316304 "pdflatex"
+  "Main.aux" 1749970297.207 7244 fa978d9d28940e75a595ac0503d4312d "pdflatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["pdflatex"] 1749968822.66958 "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" "Main.pdf" "Main" 1749968824.64243 0
-  "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" 1749968822.48622 20648 5f933718fcd14437277e5d93f410af25 ""
+["pdflatex"] 1749970295.47183 "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" "Main.pdf" "Main" 1749970297.49977 0
+  "/Users/kbuerger/Documents/Studium/Master/02_Semester/FortgeschritteneKonzepteNichtlineareRegelung/Presentation_ANC/Presentation_ANC/Main.tex" 1749970295.27475 22618 1b587c622e1a14f3beaf077491908e1c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -296,12 +296,12 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1736431701 3350769 5f68642da9918837a037d2632d4b6e2c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "ITR_LSR_slides.cls" 1749468429.62057 33373 2b6613a1e0a4fe982c98a954d7a50c17 ""
-  "Main.aux" 1749968824.35288 6604 afae0b7c3edfd623a9e896be35316304 "pdflatex"
-  "Main.bbl" 1749890671.42778 5408 cd7a4ca679b2fd1baee98fa877150016 "bibtex Main"
-  "Main.nav" 1749968824.35602 3295 723f8cc99cac19d99ae84bc88f4df1c7 "pdflatex"
-  "Main.out" 1749968824.35351 1196 0626961c0648f58ddfddeb5c38df7268 "pdflatex"
-  "Main.run.xml" 1749968824.35597 2554 9d81794aff8831d079217d6ac7f98649 "pdflatex"
-  "Main.tex" 1749968822.48622 20648 5f933718fcd14437277e5d93f410af25 ""
+  "Main.aux" 1749970297.207 7244 fa978d9d28940e75a595ac0503d4312d "pdflatex"
+  "Main.bbl" 1749970141.87782 5408 cd7a4ca679b2fd1baee98fa877150016 "bibtex Main"
+  "Main.nav" 1749970297.21032 3663 a1a64404f08bba976775c4930b9b9c06 "pdflatex"
+  "Main.out" 1749970297.20775 1196 0626961c0648f58ddfddeb5c38df7268 "pdflatex"
+  "Main.run.xml" 1749970297.21028 2554 9d81794aff8831d079217d6ac7f98649 "pdflatex"
+  "Main.tex" 1749970295.27475 22618 1b587c622e1a14f3beaf077491908e1c ""
   "pics/ultimate_boundedness_rotated.pdf" 1749282251.78607 7482 5d936e76b23a43adf0c09cd32bd6e15c ""
   (generated)
   "Main-blx.bib"

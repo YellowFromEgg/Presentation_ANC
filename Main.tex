@@ -557,10 +557,84 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 
-\begin{frame}[allowframebreaks]
+\begin{frame}
     \frametitle{References}
     \nocite{*} 
     \printbibliography[heading=none]
 \end{frame}
+
+
+\begin{frame}
+    \frametitle{Grönwall's Inequality}
+    \begin{align*}
+        \underline{w}(t) &= \underline{x}(t)-\underline{z}(t) \text{ with } \underline{w}(t_0)=0\\[0.3cm]
+        \dot{\underline{w}}(t) &= \dot{\underline{x}}(t)-\dot{\underline{z}}(t) \leq -(a-b)(\underline{x}(t)-\underline{z}(t)) = -(a-b)\underline{w}(t) \\[0.3cm]
+        \underline{w}(t) &= 0 \implies \underline{w}(t) \leq 0 \implies \underline{w}(t) \leq \underline{z}(t) \\[0.3cm]
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Lyapunov Candidate Function and Derivative}
+    \textbf{Candidate Function:}
+    \[
+    V(x) = x^T P x
+    \]
+    
+    \textbf{Time Derivative:}
+    \[
+    \dot{V}(x) = \dot{x}^T P x + x^T P \dot{x}
+    \]
+    
+    \textbf{Substitute} \( \dot{x} = A x + B d \):
+    \[
+    \dot{V} = (A x + B d)^T P x + x^T P (A x + B d)
+    \]
+    \[
+    \dot{V} = x^T A^T P x + d^T B^T P x + x^T P A x + x^T P B d
+    \]
+    \[
+    \dot{V} = x^T (A^T P + P A) x + d^T B^T P x + x^T P B d
+    \]
+\end{frame}
+    
+\begin{frame}{Simplifying the Expression}
+    \textbf{Use the Lyapunov Equation:}
+    \[
+    A^T P + P A = -Q
+    \Rightarrow \dot{V} = -x^T Q x + d^T B^T P x + x^T P B d
+    \]
+    
+    \textbf{Group the Cross Terms:}
+    \[
+    \dot{V} = -x^T Q x + 2 x^T P B d
+    \]
+    
+    \textbf{Bounding the Quadratic Term:}
+    Since \( Q > 0 \), \( -x^T Q x \leq -\lambda_{\min}(Q) \|x\|^2 \)
+    
+    Let \( c_3 = \lambda_{\min}(Q) \), then:
+    \[
+    \dot{V} \leq -c_3 \|x\|^2 + 2 x^T P B d
+    \]
+    \end{frame}
+    
+    \begin{frame}{Bounding the Cross Term}
+    \textbf{Use Cauchy-Schwarz Inequality:}
+    \[
+    |2 x^T P B d| \leq 2 \|x\| \|P B\| \|d\|
+    \]
+    
+    Define \( c_4 = 2 \|P B\| \), then:
+    \[
+    \dot{V} \leq -c_3 \|x\|^2 + c_4 \|x\| \|d\|
+    \]
+    
+    \textbf{If} \( \|d\| \leq \delta \):
+    \[
+    \dot{V} \leq -c_3 \|x\|^2 + c_4 \delta \|x\|
+    \]
+    
+    This inequality bounds the Lyapunov function derivative under bounded disturbances.
+\end{frame}
+
 
 \end{document}
